@@ -1,0 +1,9 @@
+{
+    "normal_roi_array": [0.6, 1.2, 1.8, 3.6],
+    "touch_roi_array": [1.0, 2.0],
+    "center_roi_normal": [6,4,3,3],
+    "center_roi_normal_lowlight": [5,3,5,5],
+    "slowmo_center_roi_normal": [5,4,5,3],
+    "min_roi_constrain_gain_table": [0],
+    "min_roi_constrain_size_table": [250]
+}

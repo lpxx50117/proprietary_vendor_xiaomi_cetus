@@ -1,0 +1,9 @@
+{
+    "photographic_distance_camera_object" : 120,
+    "general_size_of_face_in_real_world" : 12.5,
+    "size_of_face_in_pixel" : 330,
+	"detected_face_min_size_in_pixel" : 150,
+    "face_mode_in_confidence_thr" : 400,
+    "loss_face_penalty_in_confidence_thr" : 100,
+    "small_face_loss_face_penalty_in_confidence_thr" : 50
+}

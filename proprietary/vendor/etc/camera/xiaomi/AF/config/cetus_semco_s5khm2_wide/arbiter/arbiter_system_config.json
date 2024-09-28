@@ -1,0 +1,5 @@
+{
+    "pdaf_enable": false,
+    "tof_enable": false,
+    "cdaf_enable": true
+}

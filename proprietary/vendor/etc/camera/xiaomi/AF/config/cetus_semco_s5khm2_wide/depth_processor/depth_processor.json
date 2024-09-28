@@ -1,0 +1,23 @@
+{
+	"roi_iou_thd" : 0.7,
+	"caf_pd_roi_sx": 0.345,
+	"caf_pd_roi_sy": 0.293333,
+	"caf_pd_roi_ex": 0.655,
+	"caf_pd_roi_ey": 0.706667,
+	"caf_pd_hor_win_count" : 5,
+	"caf_pd_ver_win_count" : 5,
+	"min_roi_size" : 248,
+	"max_roi_size" : 400,
+	"taf_pd_hor_win_count" : 3,
+	"taf_pd_ver_win_count" : 3,
+	"macro_pd_hor_win_count" : 3,
+	"macro_pd_ver_win_count" : 3,
+	"lowlight_gain_thd" : 8.0,
+	"lowlight_caf_pd_roi_sx": 0.345,
+	"lowlight_caf_pd_roi_sy": 0.293333,
+	"lowlight_caf_pd_roi_ex": 0.655,
+	"lowlight_caf_pd_roi_ey": 0.706667,
+	"lowlight_caf_pd_hor_win_count" : 5,
+	"lowlight_caf_pd_ver_win_count" : 5,
+	"face_max_distance" : 490.0
+}

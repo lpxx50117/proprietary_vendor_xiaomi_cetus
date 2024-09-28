@@ -1,0 +1,7 @@
+{
+	"motion_monitor_on": true,
+	"scene_monitor_on": true,
+	"contrast_monitor_on": true,
+	"depth_monitor_on": true,
+	"face_monitor_on" : true
+}

@@ -1,0 +1,52 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP", "Dragon", "Surf", "CMI", "CETUS"
+    ],
+    "soc_id": [
+      "291", "246", "305", "321", "339", "356", "415"
+    ]
+  },
+  "sns_aod": {
+    "owner": "sns_aod",
+    ".params":{
+      "owner": "sns_aod",
+      "param1": {
+        "ver": "0", "type": "flt", "data": "300"
+      },
+      "param2": {
+        "ver": "0", "type": "flt", "data": "1000"
+      },
+      "param3": {
+        "ver": "0", "type": "flt", "data": "2000"
+      },
+      "param4": {
+        "ver": "0", "type": "flt", "data": "3000"
+      },
+      "param5": {
+        "ver": "0", "type": "flt", "data": "4000"
+      },
+      "param6": {
+        "ver": "0", "type": "flt", "data": "5000"
+      },
+      "param7": {
+        "ver": "0", "type": "flt", "data": "6000"
+      },
+      "param8": {
+        "ver": "0", "type": "flt", "data": "7000"
+      },
+      "param9": {
+        "ver": "0", "type": "flt", "data": "8000"
+      },
+      "param10": {
+        "ver": "0", "type": "flt", "data": "9000"
+      },
+      "param11": {
+        "ver": "0", "type": "flt", "data": "10000"
+      },
+      "param12": {
+        "ver": "0", "type": "flt", "data": "0"
+      }
+    }
+  }
+}

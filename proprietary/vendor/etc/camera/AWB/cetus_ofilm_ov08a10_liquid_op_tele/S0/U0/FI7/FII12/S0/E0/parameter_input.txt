@@ -1,0 +1,1459 @@
+//INT32 para_id sensor(1) module(1) mode(1) y(1) m(2) d(2) version(1)
+603104271
+//INT32 seg_num_D65_D50_tele
+3
+//INT32 xbin_start
+387
+//INT32 xbin_end
+1427
+//INT32 ybin_start
+233
+//INT32 ybin_end
+889
+//INT32 xbin_width
+16
+//INT32 ybin_width
+16
+//INT32 xbin_num
+65
+//INT32 ybin_num
+41
+//INT32 x_stat_num
+64
+//INT32 y_stat_num
+48
+//INT32 ref_point_rg[10] = {
+	480,	516,	508,	552,	611,	642,	672,	890,	1110,	1330
+//INT32 ref_point_bg[10] = {
+	817,	707,	673,	597,	457,	477,	496,	421,	357,	293
+//INT32 ref_point_CT[10] = {
+	10000,  7500,  6500,  5000,  4000,  4000,  4000,  2856,  2300,  1800
+//INT32 perfer_lux_num
+5
+//INT32 perfer_ir_num
+3
+//INT32 perfer_ct_num
+8	
+//INT32 skin_lux_num
+5
+//INT32 skin_ir_num
+3
+//INT32 skin_ct_num
+8
+//INT32 stat_grid_x_pixel //4000 / 64
+51
+//INT32 stat_grid_y_pixel //3000 / 48
+51
+//INT32 rg_OTP
+629
+//INT32 bg_OTP
+608
+//INT32 rg_OTP_gld
+629
+//INT32 bg_OTP_gld
+608
+//INT32 alternate_counter_max
+360
+//INT32 sky_on 
+1
+//INT32 sky_alternate
+0
+//INT32 sky_alt_on_star
+90
+//INT32 sky_alt_on_end
+270
+//INT32 plurality_on 
+1
+//INT32 plurality_alternate
+0
+//INT32 plurality_alt_on_star
+30
+//INT32 plurality_alt_on_end
+90
+//INT32 preference_on 
+1
+//INT32 preference_alternate
+0
+//INT32 preference_alt_on_star
+180
+//INT32 preference_alt_on_end
+360
+//INT32 green_on 
+1
+//INT32 green_alternate
+0
+//INT32 green_alt_on_star
+1
+//INT32 green_alt_on_end
+181
+//INT32 face_on 
+1
+//INT32 face_alternate
+0
+//INT32 face_alt_on_star
+90
+//INT32 face_alt_on_end
+170
+//INT32 UL_cct_on 
+1
+//INT32 UL_cct_alternate
+0
+//INT32 UL_cct_alt_on_star
+90
+//INT32 UL_cct_alt_on_end
+170
+//INT32 outdoor_corr_on 
+1
+//INT32 outdoor_corr_alternate
+0
+//INT32 outdoor_corr_alt_on_star
+180
+//INT32 outdoor_corr_alt_on_end
+360
+//INT32 TP_corr_on 
+1
+//INT32 TP_corr_alternate
+0
+//INT32 TP_corr_alt_on_star
+180
+//INT32 TP_corr_alt_on_end
+360
+//INT32 GS_corr_on 
+1
+//INT32 GS_corr_alternate
+0
+//INT32 GS_corr_alt_on_star
+180
+//INT32 GS_corr_alt_on_end
+360
+//INT32 saturation_th_rgb //use the condition ">"
+13440
+//INT32 noise_th_rgb_1[3] = {//R G B //use the condition "<"
+   192, 192, 192
+//INT32 noise_th_rgb_2[3] = {//R G B //use the condition "<"
+	0,  0,  0
+//INT32 noise_th_rgb_3[3] = {//R G B //use the condition "<"
+	0,  0,  0	 
+//FLOAT abs_lux_diff_th_for_FastConv = 
+12.0
+//INT32 frame_for_FastConv = 
+12
+//INT32 sky_outdoor_index //Forbidden: any two are equal
+140
+//INT32 outdoor_index
+190
+//INT32 indoor_bri_index
+270
+//INT32 indoor_dar_index
+370
+//INT32 dark_index
+400
+//INT32 ir_source_selec //0:ambientRate, 1: flicker_ir, 2:flicker_ir_R_corr
+2
+//FLOAT flicker_W_compensation 
+2.833
+//FLOAT high_ir //Forbidden: any two are equal
+0.8
+//FLOAT normal_ir 
+0.6
+//FLOAT low_ir 
+0.25
+//INT32 y_wet_weight_value[max_index_y_wet_weight_value] = {
+	1024, 1024, 1024, 1024
+//INT32 y_wet_lux_index[max_index_y_wet_weight_value] = {
+    0,  190,  340, 1024
+//INT32 use_y_wet_start_percent 1~99
+10
+//INT32 use_y_wet_end_percent  1~99, use_y_wet_end_percent > use_y_wet_start_percent
+90
+//INT32 correct_prob_sky_hi_ir[10] = {
+	 1,   1,  10, 100,   5,   5,   5,   1,   1,   1
+//INT32 correct_prob_sky_mi_ir[10] = {
+	 1,   1,  10, 100,   5,   5,   5,   1,   1,   1
+//INT32 correct_prob_sky_lo_ir[10] = {
+	 1,   1,  10, 100,   5,   5,   5,   1,   1,   1
+//INT32 correct_prob_outdoor_hi_ir[10] = {
+	 1,  60, 100,  80,  40,  40,  40,  10,  5,   1
+//INT32 correct_prob_outdoor_mi_ir[10] = {
+	 1,  60, 100,  80,  40,  40,  40,  10,  5,   1
+//INT32 correct_prob_outdoor_lo_ir[10] = {
+	 1,  60, 100,  80,  40,  40,  40,  10,  5,   1
+//INT32 correct_prob_indoor_hi_ir[10] = {
+	 1,  20,  60, 100,  50,  50,  50,  35,  10,   1
+//INT32 correct_prob_indoor_mi_ir[10] = {
+	 1,  20,  60, 100,  50,  30,  30,  15,  10,   1
+//INT32 correct_prob_indoor_lo_ir[10] = {
+	 1,  20,  60, 100,  50,  50,  50,  50,  10,   1
+//INT32 correct_prob_dark_hi_ir[10] = {
+	 1,  40,  60,  60,  60,  60,  60,  40,  20,   1
+//INT32 correct_prob_dark_mi_ir[10] = {
+	 1,  40,  60,  60,  60,  60,  60,  40,  20,   1
+//INT32 correct_prob_dark_lo_ir[10] = {
+	 1,  40,  60,  60,  60,  60,  40,  35,  7,   1
+//INT32 mi_lo_suppre_locct_confid_percent[2] = {
+	100, 0
+//INT32 mi_lo_suppre_locct_num_percent[2] = { // must [1] > [0]
+	10,  50
+//INT32 mi_lo_suppre_lux_confid_percent[2] = { 
+	100,   0
+//INT32 mi_lo_suppre_lux_index[2] = { // must [1] > [0]
+	290,  350
+//INT32 mi_lo_suppre_ir_confid_percent[2] = {
+	0,  0
+//FLOAT mi_lo_suppre_ir_index[2] = { // must [1] > [0]
+	0.5,  0.7
+//INT32 mi_suppre_correct_prob =  //-100 ~ 100
+    -40
+//INT32 lo_suppre_correct_prob =  //-100 ~ 100
+    2
+//INT32 close_force_outdoor[10] = {
+	 0,   0,   0,   0,   0,   0,   0,   0,	 0,   0
+//INT32 close_force_indoor[10] = {
+	 0,   0,   0,   0,   0,   0,   0,   0,	 0,   0
+//INT32 close_force_dark[10] = {
+	 0,   0,   0,   0,   0,   0,   0,   0,	 0,   0
+//INT32 reduce_face_wet_per_frame  //1 ~ 1024
+20
+//INT32 face_correction_strength //1 ~ 1024 ~ 2048 //512: weak, 1024: normal, 2048: strong
+2048
+//INT32 sky_preserve_distance_std_percent
+150
+//INT32 green_bright_index
+240
+//INT32 green_dark_index
+290
+//FLOAT green_hi_ir_index
+0.85
+//FLOAT green_lo_ir_index
+0.7
+//INT32 green_diff_over_d65d50_low //1024=1.0
+100
+//INT32 green_diff_over_d65d50_hi
+200
+//INT32 green_full_ratio_low //1 ~ 1024 //lower value is, stronger green confidence is.
+200
+//INT32 green_full_ratio_hi //1 ~ 1024 //lower value is, stronger green confidence is.
+400
+//INT32 allow_max_green_percent // 1 ~ 100 or > 100 //lower value is, stronger green attenuation is.
+1
+//INT32 green_confi_for_reduce_low //1 ~ 1024 //When green_confidence > green_confid_for_reduce_low, start to reduce the number of middle CT valid stats.
+300
+//INT32 green_confi_for_reduce_hi //1 ~ 1024 //When green_confidence > green_confid_for_reduce_hi, ignore all middle CT valid stats.
+400
+//INT32 green_confi_modify_lo_CT_wet_ratio  //1.0 = 1024  //Higher value is, lower lo_CT_wet is.
+1200
+//INT32 green_hist_target_ratio //1 ~ 1024  //Higher value is, stronger D50 used by history is.
+500
+//INT32 green_confi_modify_valid_white_ratio  //0 ~ 1024  //Higher value is, lower valid_white is.
+300
+//INT32 green_shift_percent[2] = { //0~100 
+0,  70
+//INT32 green_confidence_index[2] = { //0~1024 // must [1] > [0]
+200,  1024
+//INT32 green_target_rg
+533
+//INT32 green_target_bg
+634
+//INT32 plur_wet_outdoor[9] = {
+		 50, 50, 50, 50,  50, 50,  50, 50, 50 
+//INT32 plur_wet_indoor[9] = {
+	     25, 50,100, 50, 50, 50,  90, 30, 50
+//INT32 plur_wet_dark[9] = {
+		 50, 50, 50, 50, 50,  50,  50, 50, 50 
+//INT32 HL_area_boost  //100=1.0
+200
+//INT32 ML_area_boost 
+200
+//INT32 HM_area_boost
+200
+//INT32 valid_white_num_th   //0~1024
+2
+//INT32 valid_white_dist_th   //0~1024
+2
+//INT32 invalid_white_num_start   //0~1024
+1
+//INT32 invalid_white_num_end   //0~1024
+0
+//INT32 invalid_white_dist_start   //0~1024
+1
+//INT32 invalid_white_dist_end   //0~1024
+0
+//INT32 UL_cct_rg_hi
+2000
+//INT32 UL_cct_rg_lo
+1050
+//INT32 UL_cct_bg_hi
+310
+//INT32 UL_cct_bg_lo
+220
+//INT32 UL_cct_hi_lux // Forbidden: UL_cct_hi_lux == UL_cct_lo_lux
+325
+//INT32 UL_cct_lo_lux
+335
+//INT32 UL_cct_over_full_ratio_lo //1 ~ 1024 //lower value is, stronger UL_cct confidence is.
+100
+//INT32 UL_cct_over_full_ratio_hi //1 ~ 1024 //lower value is, stronger UL_cct confidence is.
+300
+//INT32 himilo_over_UL_cct_ratio_lo //1 ~ 1024 //larger value is, stronger UL_cct confidence is.
+950
+//INT32 himilo_over_UL_cct_ratio_hi //1 ~ 1024 //larger value is, stronger UL_cct confidence is.
+1050
+//INT32 prefer_UL_cct_rg
+-245
+//INT32 prefer_UL_cct_bg
+90
+//INT32 SA1_LT_RD_rg_bg[3][4] //top_left_rg_bg and dwon_right_rg_bg
+{450, 1050, 500, 1000},
+{460, 1000, 510, 950},
+{470, 950, 520, 900}
+//INT32 SA1_rg
+532
+//INT32 SA1_bg
+651
+//INT32 SA1_mun_confid_percent[4]
+	  0,  35, 100, 100
+//INT32 SA1_num_percent[4] // must [3] > [2] > [1] > [0]
+	 10,  35,  45, 100
+//INT32 SA1_lux_confid_percent[4]
+	  0, 100, 100,   0
+//INT32 SA1_lux_index[4] // must [3] > [2] > [1] > [0]
+	180, 185, 225, 235
+//INT32 SA1_ir_confid_percent[4]
+	100,   0,   0,   0
+//FLOAT SA1_ir_index[4] // must [3] > [2] > [1] > [0]
+	0.3, 0.4, 0.5, 0.7
+//INT32 SA2_LT_RD_rg_bg[3][4] //top_left_rg_bg and dwon_right_rg_bg
+{1440, 310, 1925, 210},
+{1440, 310, 1925, 210},
+{1440, 310, 1925, 210}
+//INT32 SA2_rg
+1045
+//INT32 SA2_bg
+375
+//INT32 SA2_mun_confid_percent[4]
+	  0,   0, 100, 100
+//INT32 SA2_num_percent[4] // must [3] > [2] > [1] > [0]
+	 10,  50,  65, 100
+//INT32 SA2_lux_confid_percent[4]
+	  0, 100, 100,   0
+//INT32 SA2_lux_index[4] // must [3] > [2] > [1] > [0]
+	280, 285, 305, 310
+//INT32 SA2_ir_confid_percent[4]
+	100,   0,   0,   0
+//FLOAT SA2_ir_index[4] // must [3] > [2] > [1] > [0]
+	0.2, 0.3, 0.5, 0.7
+//INT32 SA3_LT_RD_rg_bg[3][4] //top_left_rg_bg and dwon_right_rg_bg
+{30, 30, 30, 30},
+{30, 30, 30, 30},
+{30, 30, 30, 30}
+//INT32 SA3_rg
+543
+//INT32 SA3_bg
+593
+//INT32 SA3_mun_confid_percent[4]
+	3,  3,  3,  3
+//INT32 SA3_num_percent[4] // must [3] > [2] > [1] > [0]
+	10,  60,  70,  80
+//INT32 SA3_lux_confid_percent[4]
+	0,  0,  0,  0
+//INT32 SA3_lux_index[4] // must [3] > [2] > [1] > [0]
+	60,  100,  150,  200
+//INT32 SA3_ir_confid_percent[4]
+	0,  0,  0,  0
+//FLOAT SA3_ir_index[4] // must [3] > [2] > [1] > [0]
+	2.3,  6.3, 7.3, 8.3
+//INT32 outdoor_rg
+585
+//INT32 outdoor_bg
+600
+//INT32 outdoor_corr_range1_CT_hi_lo[2] = { // must [0] > [1]
+	10000,  7000
+//INT32 outdoor_corr_range1_confid_percent[2] = {
+	100, 99
+//INT32 outdoor_corr_range1_num_percent[2] = { // must [1] > [0]
+	 10, 40
+//INT32 outdoor_corr_range2_CT_hi_lo[2] = { // must [0] > [1]
+	10000,  4500
+//INT32 outdoor_corr_range2_confid_percent[2] = {
+	100,  0
+//INT32 outdoor_corr_range2_num_percent[2] = { // must [1] > [0]
+	 10, 35
+//INT32 outdoor_corr_range3_CT_hi_lo[2] = { // must [0] > [1]
+	10000,  9999
+//INT32 outdoor_corr_range3_confid_percent[2] = {
+	100,  100
+//INT32 outdoor_corr_range3_num_percent[2] = { // must [1] > [0]
+	10,  60
+//INT32 outdoor_corr_range4_add_UL_stat_num = 
+    1
+//INT32 outdoor_corr_range4_CT_hi_lo[2] = { // must [0] > [1]
+	3000,  1800
+//INT32 outdoor_corr_range4_confid_percent[2] = {
+	100,  0
+//INT32 outdoor_corr_range4_num_percent[2] = { // must [1] > [0]
+	10,  30
+//INT32 outdoor_corr_lux_confid_percent[4] = {
+	100,  100,  100,  0
+//INT32 outdoor_corr_lux_index[4] = { // must [3] > [2] > [1] > [0]
+	 180,  200,  290,  320
+//INT32 outdoor_corr_ir_confid_percent[2] = {
+	  0,  60
+//FLOAT outdoor_corr_ir_index[2] = { // must [1] > [0]
+    0.45,  0.65
+//INT32 TP_rg  
+585
+//INT32 TP_bg
+605
+//INT32 TP_range1_CT_hi_lo[2] = { // must [0] > [1]
+	10000,  7000
+//INT32 TP_range1_confid_percent[2] = { 
+	30, 70
+//INT32 TP_range1_num_percent[2] = { // must [1] > [0]
+	5,  15
+//INT32 TP_range2_CT_hi_lo[2] = { // must [0] > [1]
+	10000,  4500
+//INT32 TP_range2_confid_percent[2] = { 
+	100, 99
+//INT32 TP_range2_num_percent[2] = { // must [1] > [0]
+	10,  60
+//INT32 TP_range3_CT_hi_lo[2] = { // must [0] > [1]
+	6500,  4400
+//INT32 TP_range3_confid_percent[2] = { 
+	100,  1
+//INT32 TP_range3_num_percent[2] = { // must [1] > [0]
+	10,  50
+//INT32 TP_range4_add_UL_stat_num = 
+    1
+//INT32 TP_range4_CT_hi_lo[2] = { // must [0] > [1]
+	3500,  1800
+//INT32 TP_range4_confid_percent[2] = { 
+	100,  99
+//INT32 TP_range4_num_percent[2] = { // must [1] > [0]
+	10,  60
+//INT32 TP_lux_confid_percent[4] = { 
+	200,  100,  100,  0
+//INT32 TP_lux_index[4] = { // must [3] > [2] > [1] > [0]
+	125,  135,  160,  190
+//INT32 TP_ir_confid_percent[2] = {
+	0,  90
+//FLOAT TP_ir_index[2] = { // must [1] > [0]
+	0.45,  0.65
+//INT32 GS_skin_rg_hi
+1200
+//INT32 GS_skin_rg_lo
+450
+//INT32 GS_skin_bg_hi
+1100
+//INT32 GS_skin_bg_lo
+820
+//INT32 GS_rg
+631
+//INT32 GS_bg
+480
+//INT32 GS_green_confid_percent[2] = { 
+	100, 100
+//INT32 GS_green_num_percent[2] = { // must [1] > [0]
+	 0, 1
+//INT32 GS_skin_confid_percent[2] = {
+	5, 100
+//INT32 GS_skin_num_percent[2] = { // must [1] > [0]
+	 20, 25
+//INT32 GS_lux_confid_percent[4] = {
+	0,  100,  100,  0
+//INT32 GS_lux_index[4] = { // must [3] > [2] > [1] > [0]
+	 130,  185,  225,  280
+//INT32 GS_ir_confid_percent[2] = {
+	  0,  100
+//FLOAT GS_ir_index[2] = { // must [1] > [0]
+    0.0,  0.1
+//INT32 skin_upper_CQ_rg[4] = { //4 pointers of upper convex quadrilateral in clockwise.
+ 493,  685,  978,  751
+//INT32 skin_upper_CQ_bg[4] = { 
+ 720,  720,  600,  482
+//INT32 skin_lower_CQ_rg[4] = { //4 pointers of lower convex quadrilateral in clockwise.
+ 751,  978,  1940,  1940
+//INT32 skin_lower_CQ_bg[4] = {
+ 482,  600,   320,   170
+//INT32 skin_ref_pointer_d75_rg //d75 to d50 must be anti-slash type.
+755
+//INT32 skin_ref_pointer_d75_bg
+609
+//INT32 skin_ref_pointer_d50_rg //d50 to h must be anti-slash type.
+800
+//INT32 skin_ref_pointer_d50_bg
+532
+//INT32 skin_ref_pointer_h_rg
+1548
+//INT32 skin_ref_pointer_h_bg
+332
+//INT32 skin_WP_percent_from_skin[10] = { //0~100
+	100,  100,  100,  100,  100,  100,  100,  100,  100,  100
+//INT32 skin_WP_percent_from_gray[10] = {//0~100
+	100,  100,  100,  100,  100,  100,  100,  100,  100,  100
+//INT32 skin_WP_percent_from_num[2] = { //0~100 // must [1] > [0]
+	  1,  100
+//FLOAT skin_WP_percent_num_index[2] = { //0~1.0 // must [1] > [0]
+  	  0.0263671875,  0.111328125
+//INT32 skin_WP_percent_from_skinratio[2] = { //0~100 // must [1] > [0]
+	  100,  100
+//FLOAT skin_WP_percent_skinratio_index[2] = { //0~1.0 // must [1] > [0]
+  	  0.45,  0.65	
+//INT32 skin_WP_percent_from_cctdiff[20] = {//0~100 // must [odd] > [even] 
+	  0, 50,      0, 50,      0, 50,     0, 50,     0, 80,     0, 80,     0, 80,     0, 70,     0, 70,     0, 50
+//INT32 skin_WP_cctdiff_th[20] = {//0~hi-lo  //must [odd] > [even]  Hi D75 D65 D50 X X TL84 A H Lo
+	200, 1300,  200, 1300,  200, 500,  200, 500,  200, 500,  200, 500,  200, 500,  200, 500,  200, 500,  200, 500
+//INT32 skin_CTrange_hi_lo[2] = { // 10000~1800
+	7000,  4000
+//INT32 skin_WP_percent_from_CTrange[2] = {
+	100, 100
+//INT32 skin_WP_percent_CTrange_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_WP_percent_from_outdoor_corr[2] = {
+	100, 100
+//INT32 skin_WP_percent_outdoor_corr_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_WP_percent_from_TP_corr[2] = {
+	100, 100
+//INT32 skin_WP_percent_TP_corr_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_prefer_percent_from_skin[10] = {//0~100
+	  0,    0,    0,    0,    0,    0,    0,    0,    0,    0
+//INT32 skin_prefer_percent_from_grayskin[10] = {//0~100
+	100,  100,  100,  100,  100,  100,  100,  100,  100,  100
+//INT32 skin_prefer_percent_from_num[2] = {//0~100 // must [1] > [0]
+	  1,  100
+//FLOAT skin_prefer_percent_num_index[2] = {//0~1.0 // must [1] > [0]
+  	  0.0009765625,  0.0048828125
+//INT32 skin_prefer_percent_from_skinratio[2] = { //0~100 // must [1] > [0]
+	  100,  100
+//FLOAT skin_prefer_percent_skinratio_index[2] = { //0~1.0 // must [1] > [0]
+  	  0.45,  0.65
+//INT32 skin_prefer_percent_from_CTrange[2] = {
+	100, 100
+//INT32 skin_prefer_percent_CTrange_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_prefer_percent_from_outdoor_corr[2] = {
+	100, 100
+//INT32 skin_prefer_percent_outdoor_corr_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_prefer_percent_from_TP_corr[2] = {
+	100, 100
+//INT32 skin_prefer_percent_TP_corr_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_ccm_percent_from_skin[10] = {//0~100
+	100,  100,  100,  100,  100,  100,  100,  100,  100,  100
+//INT32 skin_ccm_percent_from_grayskin[10] = {//0~100
+	100,  100,  100,  100,  100,  100,  100,  100,  100,  100
+//INT32 skin_ccm_percent_from_num[2] = {//0~100 // must [1] > [0]
+	  1,  100
+//FLOAT skin_ccm_percent_num_index[2] = {//0~1.0 // must [1] > [0]
+  	  0.0009765625,  0.0048828125
+//INT32 skin_ccm_percent_from_skinratio[2] = { //0~100 // must [1] > [0]
+	  100,  100
+//FLOAT skin_ccm_percent_skinratio_index[2] = { //0~1.0 // must [1] > [0]
+  	  0.45,  0.65
+//INT32 skin_ccm_percent_from_CTrange[2] = {
+	100, 100
+//INT32 skin_ccm_percent_CTrange_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_ccm_percent_from_outdoor_corr[2] = {
+	100, 100
+//INT32 skin_ccm_percent_outdoor_corr_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_ccm_percent_from_TP_corr[2] = {
+	100, 100
+//INT32 skin_ccm_percent_TP_corr_index[2] = { //0~100 // must [1] > [0]
+	 10, 40
+//INT32 skin_lux_ref //Monotonically increasing //No two can be equal
+	123,	173,	253,	353,	383
+///FLOAT skin_ir_ref //Monotonically decreasing //No two can be equal
+	0.8,	0.6,	0.25
+//INT32 skin_ct_ref //Monotonically decreasing //No two can be equal
+	10000,  7500,  6500,  5000,  4000,  2856,  2300,  1800	
+//INT32 skin_0lux_0ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_0lux_1ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_0lux_2ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_1lux_0ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_1lux_1ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_1lux_2ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_2lux_0ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_2lux_1ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_2lux_2ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_3lux_0ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_3lux_1ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_3lux_2ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_4lux_0ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_4lux_1ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_4lux_2ir = {
+	100, 100, 100, 100, 100, 100, 100, 100
+//INT32 skin_grayWP_to_locus_percent //0~100
+0
+//INT32 skin_rgbg_use_pre_percent //0~100
+50
+//INT32 skin_WP_use_pre_percent //0~100
+50
+//INT32 skin_prefer_use_pre_percent //0~100
+50
+//INT32 skin_ccm_use_pre_percent //0~100
+50
+//INT32 skin_WP_keep_cont_max //0~max
+4
+//INT32 skin_prefer_keep_cont_max //0~max
+4
+//INT32 skin_ccm_keep_cont_max //0~max
+4
+//INT32 skin_WP_attenu //0~100
+10
+//INT32 skin_prefer_attenu //0~100
+10
+//INT32 skin_ccm_attenu //0~100
+10
+//INT32 c1_z1_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.//D65
+	660,  390,  1010,  1800
+//INT32 c1_z1_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c1_z1_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c1_z1_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c1_z2_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	1780,  1110,  210,  355
+//INT32 c1_z2_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c1_z2_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0195,  0.0326
+//INT32 c1_z2_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c1_z3_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	480,  200,  200,  500
+//INT32 c1_z3_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c1_z3_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c1_z3_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c1_z4_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	700,  570,  370,  485
+//FLOAT c1_z4_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.2,  0.7,  0.9,  1.0
+//INT32 c1_z4_percent[4] = {//100=1.0
+	0,  0,  0,   0
+//INT32 c1_prefer_rg_bg[2] = { 
+	-10, +5
+//INT32 c2_z1_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.//H
+	890,  540,  530,  820
+//INT32 c2_z1_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c2_z1_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c2_z1_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c2_z2_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	410,  320,  2240,  3550
+//INT32 c2_z2_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c2_z2_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c2_z2_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c2_z3_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	310,  170,  450,  860
+//INT32 c2_z3_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c2_z3_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.017,  0.0326
+//INT32 c2_z3_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c2_z4_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	410,  300,  770,  1030
+//FLOAT c2_z4_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.2,  0.6,  0.9,  1.0
+//INT32 c2_z4_percent[4] = {//100=1.0
+	0,   0,   0,   0
+//INT32 c2_prefer_rg_bg[2] = {
+	-10, +10
+//INT32 c3_z1_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.//TL84
+	1410,  825,  320,  515
+//INT32 c3_z1_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c3_z1_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c3_z1_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c3_z2_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	500,  320,  1220,  2200
+//INT32 c3_z2_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c3_z2_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c3_z2_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c3_z3_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	390,  190,  240,  500
+//INT32 c3_z3_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c3_z3_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0195,  0.0326
+//INT32 c3_z3_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c3_z4_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	550,  420,  500,  630
+//FLOAT c3_z4_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.2,  0.7,  0.9,  1.0
+//INT32 c3_z4_percent[4] = {//100=1.0
+	0,   0,   0,   0
+//INT32 c3_prefer_rg_bg[2] = { 
+	-9,   +2
+//INT32 c4_z1_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.//A
+	1060,  610,  400,  775
+//INT32 c4_z1_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c4_z1_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c4_z1_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c4_z2_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	465,  315,  1695,  2760
+//INT32 c4_z2_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c4_z2_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c4_z2_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c4_z3_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	380,  170,  300,  640
+//INT32 c4_z3_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c4_z3_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0195,  0.0326
+//INT32 c4_z3_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c4_z4_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	500,  380,  600,  750
+//FLOAT c4_z4_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.2,  0.7,  0.9,  1.0
+//INT32 c4_z4_percent[4] = {//100=1.0
+	0,   0,   0,   0
+//FLOAT c4_IR_th[2] = {//must [1] > [0]
+	0.65,  0.75
+//INT32 c4_IR_percent[2] = {//100=1.0
+	0,   100,  
+//INT32 c4_prefer_rg_bg[2] = {
+	-5, +5
+//INT32 c5_z1_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.//TL83
+	1100,  610,  550,  775
+//INT32 c5_z1_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c5_z1_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c5_z1_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c5_z2_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	400,  260,  1750,  2900
+//INT32 c5_z2_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c5_z2_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0163,  0.0326
+//INT32 c5_z2_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c5_z3_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	310,  185,  400,  720
+//INT32 c5_z3_a2_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	0,  0,  0,  0
+//FLOAT c5_z3_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.0016,  0.0032,  0.0195,  0.0326
+//INT32 c5_z3_percent[4] = {//100=1.0
+	0,  100,  100,  0
+//INT32 c5_z4_a1_bound[4] = {//bg_top, bg_down, rg_left, rg_right, All zero is off.
+	440,  320,  780,  960
+//FLOAT c5_z4_ratio_th[4] = {//must [3] > [2] > [1] > [0]
+	0.2,  0.7,  0.9,  1.0
+//INT32 c5_z4_percent[4] = {//100=1.0
+	0,   0,   0,  0
+//FLOAT c5_IR_th[2] = {//must [1] > [0]
+	0.65,  0.75
+//INT32 c5_IR_percent[2] = {//100=1.0
+	100,   0,  
+//INT32 c5_prefer_rg_bg[2] = { 
+	-15, +5 
+//INT32 HL_plur_attenu_prefer_strength[2] //0 ~ 1024 //lower value is, weaker attenuation is. Two parameters are all set to zero then this function is off.
+	0,  0
+//INT32 HL_plur_attenu_prefer_lux_index[2] // must [1] > [0]
+	160,  240
+//INT32 ML_plur_attenu_prefer_strength[2] //0 ~ 1024 //lower value is, weaker attenuation is. Two parameters are all set to zero then this function is off.
+	0,  0
+//INT32 ML_plur_attenu_prefer_lux_index[2] // must [1] > [0]
+	160,  240
+//INT32 HM_plur_attenu_prefer_strength[2] //0 ~ 1024 //lower value is, weaker attenuation is. Two parameters are all set to zero then this function is off.
+	0,  0
+//INT32 HM_plur_attenu_prefer_lux_index[2] // must [1] > [0]
+	160,  240
+//INT32 perfer_lux_ref //Monotonically increasing //No two can be equal
+	140,	190,	270,	370,	400
+///FLOAT perfer_ir_ref //Monotonically decreasing //No two can be equal
+	0.8,	0.6,	0.25
+//INT32 perfer_ct_ref //Monotonically decreasing //No two can be equal
+	10000,  7500,  6500,  5000,  4000,  2856,  2300,  1800		
+//INT32 prefer_0lux_0ir_rg = {
+	0,   0,  +4,  +8,  -15, -25, -80, -80
+//INT32 prefer_0lux_0ir_bg = {
+    0,	 0,   0, +27,  +15, +20, +20, +20
+//INT32 prefer_0lux_1ir_rg = {
+	0,   0,   0,   0,  -15, -25, -80, -80
+//INT32 prefer_0lux_1ir_bg = {
+    0,	 0,   0,   0,  +15, +20, +20, +20
+//INT32 prefer_0lux_2ir_rg = {
+	0,   0,   0,   0,  -15, -25, -80, -80
+//INT32 prefer_0lux_2ir_bg = {
+    0,   0,   0,  +5,  +15, +20, +20, +20
+//INT32 prefer_1lux_0ir_rg = {
+	0,	 0,   0,   0,  -15, -25, -80, -80
+//INT32 prefer_1lux_0ir_bg = {
+	0,	 0, +20, +20,  +15, +20, +20, +20
+//INT32 prefer_1lux_1ir_rg = {
+	0,	 0,   0,  -5,  -15, -25, -80, -80
+//INT32 prefer_1lux_1ir_bg = {
+	0,	 0,   0,  +2,  +15, +20, +20, +20
+//INT32 prefer_1lux_2ir_rg = {
+	0,	 0,   0,  -5,  -15, -25, -80, -80
+//INT32 prefer_1lux_2ir_bg = {
+	0,	 0,   0,  +2,  +15, +20, +20, +20
+//INT32 prefer_2lux_0ir_rg = {
+	0,	 0, -15, -9,  -9, -25, -80, -80
+//INT32 prefer_2lux_0ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20
+//INT32 prefer_2lux_1ir_rg = {
+	0,	 0, -15, -15,  -15, -25, -80, -80
+//INT32 prefer_2lux_1ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20
+//INT32 prefer_2lux_2ir_rg = {
+	0,	 0, -15, -15,  -15, -25, -80, -80
+//INT32 prefer_2lux_2ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20
+//INT32 prefer_3lux_0ir_rg = {
+	0,	 0, -15, -15,  -15, -25, -80, -80
+//INT32 prefer_3lux_0ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20
+//INT32 prefer_3lux_1ir_rg = {
+	0,	 0, -15, -15,  -15, -25, -35, -35
+//INT32 prefer_3lux_1ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20
+//INT32 prefer_3lux_2ir_rg = {
+	0,	 0, -15, -15,  -15, -25, -35, -35
+//INT32 prefer_3lux_2ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20	
+//INT32 prefer_4lux_0ir_rg = {
+	0,	 0, -15, -15,  -22, -25, -80, -80
+//INT32 prefer_4lux_0ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20
+//INT32 prefer_4lux_1ir_rg = {
+	0,	 0, -15, -15,  -22, -25, -35, -35
+//INT32 prefer_4lux_1ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20
+//INT32 prefer_4lux_2ir_rg = {
+	0,	 0, -15, -10,  -10, -25, -35, -35
+//INT32 prefer_4lux_2ir_bg = {
+	0,	 0, +10, +15,  +15, +20, +20, +20
+//INT32 prefer_green_only_rg = {
+	0,   0,   0,   0,    0,   0,   0,   0
+//INT32 prefer_green_only_bg = {
+	0,   0,   0,   0,	 0,   0,   0,   0
+//INT32 prefer_green_sky_rg = {
+	0,   0,   0,   0,	 0,   0,   0,   0
+//INT32 prefer_green_sky_bg = {
+	0,   0,   0,   0,	 0,   0,   0,   0
+//INT32 prefer_skin_rg = {
+	0,   0,   0,   0,	 0,   0,   0,   0
+//INT32 prefer_skin_bg = 
+	0,   0,   0,   0,	 0,   0,   0,   0
+//INT32 temporal_filter_on 
+1
+//INT32 temporal_filter_strength
+80
+//INT32 temporal_filter_tolerance
+0
+//INT32 ccm_use_xawb_tool //0 or 1
+1
+//INT32 ccm_bright_lux_start
+140 
+//INT32 ccm_bright_lux_end
+190								    
+//INT32 ccm_lowlight_lux_start
+340
+//INT32 ccm_lowlight_lux_end
+370
+//INT32 ccm_use_D50_normal //0 or 1
+0
+//FLOAT ccm_use_history_ratio //0.0 ~ 1.0
+0.4
+//FLOAT ccm_D65_bright[3][3]
+{ 1.622422, -0.791355, 0.168933 },
+{ -0.222877, 1.347848, -0.124971 },
+{ -0.047309, -0.819112, 1.866421 }
+//FLOAT ccm_D65_normal[3][3]
+{ 1.559859, -0.724652, 0.164793 },
+{ -0.197568, 1.312684, -0.115116 },
+{ -0.030361, -0.751088, 1.781449 }
+//FLOAT ccm_D65_lowlight[3][3]
+{ 1.497296, -0.657950, 0.160653 },
+{ -0.172260, 1.277520, -0.105260 },
+{ -0.013413, -0.683063, 1.696476 }
+//FLOAT ccm_D65_bri_face[3][3]
+{ 1.622422, -0.791355, 0.168933 },
+{ -0.222877, 1.347848, -0.124971 },
+{ -0.047309, -0.819112, 1.866421 }
+//FLOAT ccm_D65_face[3][3]
+{ 1.559859, -0.724652, 0.164793 },
+{ -0.197568, 1.312684, -0.115116 },
+{ -0.030361, -0.751088, 1.781449 }
+//FLOAT ccm_D65_low_face[3][3]
+{ 1.497296, -0.657950, 0.160653 },
+{ -0.172260, 1.277520, -0.105260 },
+{ -0.013413, -0.683063, 1.696476 }
+//FLOAT ccm_D50_bright[3][3]
+{ 1.622422, -0.791355, 0.168933 },
+{ -0.222877, 1.347848, -0.124971 },
+{ -0.047309, -0.819112, 1.866421 }
+//FLOAT ccm_D50_normal[3][3]
+{ 1.559859, -0.724652, 0.164793 },
+{ -0.197568, 1.312684, -0.115116 },
+{ -0.030361, -0.751088, 1.781449 }
+//FLOAT ccm_D50_lowlight[3][3]
+{ 1.497296, -0.657950, 0.160653 },
+{ -0.172260, 1.277520, -0.105260 },
+{ -0.013413, -0.683063, 1.696476 }
+//FLOAT ccm_D50_bri_face[3][3]
+{ 1.622422, -0.791355, 0.168933 },
+{ -0.222877, 1.347848, -0.124971 },
+{ -0.047309, -0.819112, 1.866421 }
+//FLOAT ccm_D50_face[3][3]
+{ 1.559859, -0.724652, 0.164793 },
+{ -0.197568, 1.312684, -0.115116 },
+{ -0.030361, -0.751088, 1.781449 }
+//FLOAT ccm_D50_low_face[3][3]
+{ 1.497296, -0.657950, 0.160653 },
+{ -0.172260, 1.277520, -0.105260 },
+{ -0.013413, -0.683063, 1.696476 }
+//FLOAT ccm_TL84_bright[3][3]
+{ 1.637638, -0.444807, -0.192831 },
+{ -0.258346, 1.428331, -0.169985 },
+{ -0.013431, -0.805154, 1.818585 }
+//FLOAT ccm_TL84_normal[3][3]
+{ 1.637638, -0.444807, -0.192831 },
+{ -0.226511, 1.417715, -0.191204 },
+{ -0.075803, -0.747083, 1.822885 }
+//FLOAT ccm_TL84_lowlight[3][3]
+{ 1.574350, -0.394607, -0.179743 },
+{ -0.231349, 1.389334, -0.157986 },
+{ 0.001904, -0.737794, 1.735890 }
+//FLOAT ccm_TL84_bri_face[3][3]
+{ 1.637638, -0.444807, -0.192831 },
+{ -0.258346, 1.428331, -0.169985 },
+{ -0.013431, -0.805154, 1.818585 }
+//FLOAT ccm_TL84_face[3][3]
+{ 1.637638, -0.444807, -0.192831 },
+{ -0.258346, 1.428331, -0.169985 },
+{ -0.013431, -0.805154, 1.818585 }
+//FLOAT ccm_TL84_low_face[3][3]
+{ 1.574350, -0.394607, -0.179743 },
+{ -0.231349, 1.389334, -0.157986 },
+{ 0.001904, -0.737794, 1.735890 }
+//FLOAT ccm_A_bright[3][3]
+{ 1.411860, 0.098859, -0.510719 },
+{ -0.446981, 1.404012, 0.042968 },
+{ -0.203127, -1.079819, 2.282946 }
+//FLOAT ccm_A_normal[3][3]
+{ 1.411860, 0.098859, -0.510719 },
+{ -0.446981, 1.404012, 0.042968 },
+{ -0.203127, -1.079819, 2.282946 }
+//FLOAT ccm_A_lowlight[3][3]
+{ 1.328637, -0.257110, -0.071527 },
+{ -0.116003, 1.276617, -0.160615 },
+{ 0.052286, -1.036479, 1.984193 }
+//FLOAT ccm_A_bri_face[3][3]
+{ 1.411860, 0.098859, -0.510719 },
+{ -0.446981, 1.404012, 0.042968 },
+{ -0.203127, -1.079819, 2.282946 }
+//FLOAT ccm_A_face[3][3]
+{ 1.411860, 0.098859, -0.510719 },
+{ -0.446981, 1.404012, 0.042968 },
+{ -0.203127, -1.079819, 2.282946 }
+//FLOAT ccm_A_low_face[3][3]
+{ 1.328637, -0.257110, -0.071527 },
+{ -0.116003, 1.276617, -0.160615 },
+{ 0.052286, -1.036479, 1.984193 }
+//FLOAT ccm_H_bright[3][3]
+{ 1.255450, 0.657635, -0.913085 },
+{ -0.479784, 1.474118, 0.005665 },
+{ -0.380040, -1.513386, 2.893426 }
+//FLOAT ccm_H_normal[3][3]
+{ 1.255450, 0.657635, -0.913085 },
+{ -0.479784, 1.474118, 0.005665 },
+{ -0.380040, -1.513386, 2.893426 }
+//FLOAT ccm_H_lowlight[3][3]
+{ 1.737885, -1.010578, 0.272693 },
+{ -0.254909, 0.922119, 0.332791 },
+{ -0.119415, -1.474853, 2.594268 }
+//FLOAT ccm_H_bri_face[3][3]
+{ 1.255450, 0.657635, -0.913085 },
+{ -0.479784, 1.474118, 0.005665 },
+{ -0.380040, -1.513386, 2.893426 }
+//FLOAT ccm_H_face[3][3]
+{ 1.255450, 0.657635, -0.913085 },
+{ -0.479784, 1.474118, 0.005665 },
+{ -0.380040, -1.513386, 2.893426 }
+//FLOAT ccm_H_low_face[3][3]
+{ 1.737885, -1.010578, 0.272693 },
+{ -0.254909, 0.922119, 0.332791 },
+{ -0.119415, -1.474853, 2.594268 }
+//FLOAT ccm_c1[3][3]//D65
+{ 1.731081, -0.607950, -0.123131 },
+{ -0.141564, 1.443862, -0.302298 },
+{ 0.068077, -0.642438, 1.574362 }
+//FLOAT ccm_c2[3][3]//H
+{ 1.542837, 0.027531, -0.570367 },
+{ -0.261063, 1.244636, 0.016427 },
+{ -0.147129, -1.492525, 2.639654 }
+//FLOAT ccm_c3[3][3]//TL84
+{ 1.631181, -0.357276, -0.273904 },
+{ -0.209938, 1.333168, -0.123230 },
+{ 0.001400, -0.761893, 1.760493 }
+//FLOAT ccm_c4[3][3]//A
+{ 1.463729, -0.223177, -0.240552 },
+{ -0.214154, 1.306057, -0.091903 },
+{ -0.021328, -1.072982, 2.094309 }
+//FLOAT ccm_c5[3][3]//TL83
+{ 1, 0, 0 },
+{ 0, 1, 0 },
+{ 0, 0, 1 }
+//static INT32 d_map_outdoor[ybin_num][xbin_num] 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    2,   10,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    9,   44,   83,  125,  171,  223,  310,  453,  459,  396,  327,  125,   31,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    4,   31,   60,   94,  133,  178,  231,  356,  510,  622,  743,  874, 1016, 1024, 1024, 1024,  925,  277,   90,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   24,   46,   67,   90,  116,  143,  174,  208,  247,  373,  529,  693,  863, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  515,  102,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   26,   76,  122,  164,  197,  225,  255,  387,  528,  674,  827,  985, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  982,  124,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   30,   88,  140,  188,  231,  324,  494,  658,  797,  939, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  182,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   34,  104,  166,  220,  308,  488,  664,  835, 1001, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  118,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   42,  129,  203,  291,  482,  668,  848, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  918,  106,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  115,  230,  462,  672,  864, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  688,   99,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  213,  548,  872, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  532,   94,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  211, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  978,  419,   91,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  177,  936, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  798,  334,   89,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  148,  704, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  983,  558,  211,   61,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,  123,  539, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  747,  329,  132,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,  363, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  923,  521,  203,   53,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,  111,  716, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  701,  305,  124,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,  238, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  870,  488,  196,   45,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,   25,  607, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  589,  117,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,  165, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  872,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,  454, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  185,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,   69, 1006, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  406,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,  245, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  641,   41,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,  907, 1024, 1024, 1024, 1024, 1024, 1024,  838,  173,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  138, 1024, 1024, 1024, 1024, 1024, 1024, 1005,  296,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  700, 1024, 1024, 1024, 1024, 1024, 1024,  495,   73,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  350, 1024, 1024, 1024, 1024, 1024,  668,  167,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  162, 1024, 1024, 1024,  897,  490,  239,    4,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,   72, 1024, 1024, 1024,  741,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,   99, 1024, 1024, 1024,  640,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  130, 1024, 1024, 1024,  497,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  166, 1024, 1024, 1024,  280,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  210, 1024, 1024,  813,  166,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  173,  656,  137,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+//static INT32 d_map_indoor[ybin_num][xbin_num] 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    4,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    6,   22,   38,   48,   46,   43,   40,   36,   32,   28,   22,   15,    7,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   20,   38,   53,   66,   80,   93,   93,   93,   93,   94,   94,   94,   95,   95,   96,   97,   97,   99,  101,  103,  108,  130,  161,  195,  233,  318,  474,  644,  220,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   17,   42,   62,   78,   91,  102,  112,  124,  137,  140,  143,  146,  150,  155,  160,  167,  174,  184,  195,  210,  230,  269,  478,  705,  950, 1024, 1024, 1024, 1024, 1024, 1024,  202,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    8,   51,   80,  101,  116,  128,  138,  146,  153,  158,  168,  180,  186,  192,  199,  207,  216,  226,  238,  253,  397,  580,  777,  988, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  699,  246,   91,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   88,  160,  173,  182,  188,  193,  197,  200,  202,  204,  206,  213,  224,  232,  241,  251,  339,  493,  656,  829, 1013, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  557,  206,   61,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   64,  156,  241,  487,  502,  472,  441,  409,  376,  342,  308,  272,  255,  301,  429,  568,  715,  870, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  765,  380,  171,   35,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   36,  137,  231,  491,  784, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1009,  988, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  769,  370,  194,  103,    5,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  113,  219,  497,  841, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  773,  359,  197,  114,   26,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  104,  288,  885, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  778,  348,  199,  123,   43,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,   81,  255,  893, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  783,  335,  201,  130,   57,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,   54,  244,  893, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  922,  245,  137,   69,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,   20,  232,  893, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  528,  177,   45,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,  217,  892, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  822,  239,  113,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,  152,  892, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  468,  175,   51,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,  214, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  739,  234,  114,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,  327, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  983,  419,  174,   56,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    7,  550, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  670,  229,  116,    1,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,   69,  774, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  898,  377,  172,   61,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  131, 1000, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  611,  225,  117,    8,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  192, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  858,  224,   98,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  253, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  445,  144,    7,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  470, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  773,  211,   51,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,   50,  698, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  403,  109,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,  106,  915, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  853,  403,  174,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  392, 1024, 1024, 1024, 1024, 1024,  594,  225,  130,   37,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  102, 1024, 1024, 1024, 1024,  243,   47,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  108, 1024, 1024, 1024,  687,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  151, 1024, 1024, 1024,  174,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  192, 1024, 1024,  673,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  230, 1024, 1024,  140,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  284, 1024,  653,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  195,  462,  102,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,   72,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+//static INT32 d_map_dark[ybin_num][xbin_num] 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    1,   12,   22,   32,   40,   32,   23,   13,    1,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    4,   16,   26,   37,   47,   57,   67,   76,   84,   79,   74,   66,   58,   49,   38,   25,    9,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   20,   31,   42,   53,   63,   74,   83,   93,  102,  111,  120,  128,  126,  124,  121,  116,  111,  105,   98,   89,   79,   66,   50,   29,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   12,   45,   71,   81,   92,  102,  112,  121,  130,  139,  148,  157,  165,  172,  174,  176,  175,  174,  174,  173,  171,  170,  168,  166,  163,  160,  155,  148,  137,  134,  161,  191,  224,  267,  375,  495,  630,  252,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   27,   62,   94,  118,  132,  142,  151,  160,  169,  177,  186,  194,  202,  210,  217,  222,  227,  230,  233,  237,  241,  246,  252,  274,  324,  379,  441,  509,  586,  673,  773,  884, 1005, 1024, 1024, 1024, 1024, 1024,  303,   27,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    2,   43,   81,  115,  146,  168,  183,  192,  200,  209,  217,  225,  233,  240,  247,  255,  309,  375,  443,  494,  541,  592,  646,  706,  770,  841,  919, 1004, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  357,   51,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   19,   62,  102,  137,  170,  200,  222,  233,  242,  250,  270,  334,  399,  465,  531,  598,  665,  733,  801,  870,  934,  997, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  404,   74,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   39,   85,  126,  164,  197,  228,  260,  422,  486,  550,  615,  681,  747,  814,  881,  949, 1017, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  750,  344,  122,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,   40,  111,  155,  194,  229,  285,  470,  654,  819,  891,  957, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  815,  494,  214,   72,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,   80,  164,  230,  311,  496,  681,  865, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  742,  339,  161,   38,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,   35,  119,  203,  425,  707,  892, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  757,  342,  151,   19,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,   74,  159,  243,  633, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  773,  345,  150,   16,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,   29,  114,  198,  369,  748, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  790,  349,  148,   13,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,   68,  153,  238,  500,  830, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  807,  352,  147,   10,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,   10,  101,  190,  326,  607,  893, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  826,  356,  146,    7,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,   40,  135,  227,  462,  753, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  850,  360,  145,    3,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,   72,  171,  293,  612,  913, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1002,  465,  155,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    2,  108,  211,  446,  778, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  624,  206,   44,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,   36,  147,  254,  617,  963, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  775,  257,   96,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,   74,  191,  426,  810, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  920,  414,  146,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  117,  239,  625, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  565,  196,   38,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,   31,  165,  397,  855, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  709,  245,   88,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,   78,  219,  637, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  847,  369,  138,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,  130,  354,  921, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1011,  531,  190,   32,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,   23,  191,  654, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  700,  247,  105,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,   82,  283, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,  864,  396,  168,   32,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,  110,  292, 1021, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1021,  563,  218,   98,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,   72,  229,  848, 1024, 1024, 1024, 1024, 1024, 1024,  669,  252,  135,   37,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,   32,  192,  681, 1024, 1024, 1024, 1024,  773,  236,  108,    1,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,  154,  435, 1024, 1024, 1024,  979,  230,   58,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,   71,  199,  562,  771,  606,  323,   93,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,  113,  210,  225,  173,   97,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,   37,  119,  111,   49,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,   61,   17,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+//static INT32 green_zone_wet[ybin_num][xbin_num]
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,  704,  831,  886,  917,  923,  901,  866,  804,  661,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,  633,  743,  805,  820,  821,  799,  745,  655,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,  603,  695,  716,  716,  716,  717,  653,  553,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,  586,  611,  611,  612,  612,  613,  582,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,  465,  494,  501,  502,  501,  494,  352,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,  196,  291,  292,  293,  284,  149,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,   82,   82,   83,   83,   83,    0,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024, -1024, -1024, -1024, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, -1024, -1024,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+ {0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,}, 
+//INT32 r_stat[y_stat_num * x_stat_num] =
+   718,    720,    744,    743,    761,    750,    777,    788,    804,    794,    797,    796,    794,    774,    785,    809,    791,    778,    763,    758,    762,    778,    773,    742,    710,    713,    735,    716,    704,    706,    696,    714,    700,    717,    731,    724,    744,    714,    711,    674,    659,    659,    664,   2206,   3085,   3062,   2999,   2964,   2910,   2864,   2825,   2777,   2729,   2724,   2692,   2660,   2628,   2784,   3507,   3519,   3516,   3516,   3505,   3484, 
+   731,    726,    743,    745,    730,    697,    708,    729,    730,    741,    731,    771,    781,    762,    770,    762,    763,    753,    769,    739,    723,    739,    747,    725,    721,    710,    672,    648,    640,    635,    671,    669,    670,    685,    690,    703,    700,    677,    650,    599,    613,    605,    635,   2349,   3041,   3018,   2974,   2925,   2885,   2838,   2786,   2754,   2714,   2689,   2661,   2640,   2465,   3052,   3471,   3504,   3505,   3519,   3498,   3488, 
+   706,    687,    684,    692,    686,    648,    649,    660,    670,    658,    671,    687,    690,    707,    701,    698,    681,    699,    722,    716,    693,    705,    725,    712,    723,    723,    690,    624,    603,    597,    637,    623,    628,    653,    658,    664,    653,    633,    608,    579,    568,    551,    584,   2559,   3001,   2981,   2936,   2890,   2848,   2807,   2774,   2732,   2686,   2662,   2642,   2626,   2293,   3329,   3460,   3462,   3484,   3490,   3486,   3482, 
+   662,    681,    681,    661,    675,    650,    643,    656,    638,    631,    635,    649,    680,    672,    656,    660,    639,    672,    674,    681,    675,    684,    705,    717,    727,    714,    662,    623,    594,    614,    611,    589,    598,    612,    628,    654,    643,    619,    596,    601,    572,    530,    615,   2791,   2958,   2930,   2899,   2850,   2813,   2777,   2738,   2706,   2677,   2649,   2621,   2597,   2351,   3363,   3417,   3427,   3439,   3464,   3463,   3461, 
+   674,    663,    687,    688,    669,    685,    672,    649,    629,    624,    600,    641,    667,    670,    648,    636,    638,    624,    610,    610,    609,    638,    682,    685,    702,    679,    682,    655,    621,    623,    597,    605,    610,    609,    640,    652,    619,    595,    581,    587,    581,    582,    840,   2915,   2930,   2902,   2872,   2842,   2786,   2760,   2726,   2697,   2666,   2639,   2613,   2580,   2462,   3365,   3403,   3398,   3415,   3437,   3430,   3431, 
+   682,    653,    682,    697,    681,    691,    684,    658,    643,    639,    655,    637,    627,    639,    638,    619,    626,    617,    611,    623,    591,    597,    629,    656,    665,    638,    664,    671,    639,    621,    598,    626,    628,    631,    622,    616,    598,    581,    565,    555,    587,    581,   1092,   2928,   2905,   2872,   2836,   2805,   2766,   2738,   2705,   2670,   2644,   2624,   2595,   2546,   2573,   3329,   3357,   3384,   3383,   3406,   3417,   3433, 
+   651,    672,    653,    622,    636,    626,    638,    638,    634,    634,    627,    634,    647,    636,    635,    594,    586,    579,    607,    613,    592,    600,    616,    640,    643,    628,    663,    650,    660,    616,    596,    623,    610,    609,    596,    599,    583,    571,    581,    583,    608,    606,   1340,   2903,   2875,   2841,   2812,   2776,   2750,   2715,   2688,   2652,   2619,   2594,   2559,   2504,   2725,   3309,   3315,   3342,   3358,   3385,   3388,   3419, 
+   574,    634,    588,    565,    570,    584,    605,    604,    623,    637,    656,    638,    643,    650,    616,    578,    536,    536,    589,    582,    562,    578,    593,    623,    628,    629,    626,    613,    609,    619,    607,    627,    592,    589,    581,    578,    598,    604,    589,    597,    632,    621,   1536,   2877,   2849,   2815,   2778,   2742,   2723,   2694,   2647,   2632,   2602,   2567,   2542,   2300,   3024,   3276,   3289,   3319,   3328,   3359,   3371,   3386, 
+   646,    635,    638,    620,    599,    630,    631,    654,    646,    645,    681,    663,    681,    648,    625,    578,    546,    558,    594,    559,    547,    596,    604,    582,    618,    603,    595,    597,    608,    614,    610,    624,    591,    584,    561,    550,    582,    596,    580,    595,    600,    602,   1698,   2854,   2817,   2774,   2759,   2728,   2697,   2665,   2622,   2601,   2578,   2561,   2524,   2255,   3164,   3250,   3253,   3268,   3300,   3329,   3349,   3373, 
+   666,    667,    660,    649,    665,    662,    631,    636,    651,    656,    662,    641,    639,    611,    593,    603,    589,    575,    591,    568,    596,    609,    586,    609,    606,    593,    594,    597,    592,    609,    619,    604,    589,    588,    578,    565,    579,    539,    538,    573,    573,    582,   1852,   2809,   2787,   2760,   2720,   2704,   2670,   2647,   2608,   2592,   2564,   2542,   2517,   2342,   3161,   3219,   3231,   3234,   3278,   3302,   3316,   3335, 
+   606,    612,    638,    639,    654,    626,    637,    660,    692,    663,    640,    643,    626,    611,    601,    609,    606,    594,    563,    575,    602,    619,    598,    587,    585,    602,    596,    583,    594,    611,    598,    600,    600,    624,    602,    595,    589,    584,    601,    618,    583,    611,   1971,   2786,   2753,   2728,   2701,   2671,   2642,   2632,   2605,   2573,   2549,   2520,   2509,   2428,   3141,   3194,   3205,   3230,   3243,   3262,   3303,   3324, 
+   606,    604,    628,    617,    618,    614,    633,    641,    641,    637,    624,    627,    626,    599,    603,    602,    591,    590,    581,    571,    590,    592,    577,    567,    597,    593,    604,    595,    603,    619,    611,    632,    634,    637,    640,    630,    637,    638,    640,    665,    680,    703,   2036,   2746,   2728,   2700,   2677,   2658,   2627,   2595,   2571,   2558,   2526,   2508,   2492,   2518,   3113,   3167,   3175,   3187,   3220,   3253,   3280,   3303, 
+   617,    626,    621,    612,    578,    584,    592,    625,    598,    576,    567,    580,    589,    594,    561,    567,    565,    576,    587,    577,    617,    592,    585,    585,    601,    617,    651,    639,    680,    811,    934,   1059,   1169,   1288,   1401,   1527,   1582,   1667,   1750,    983,    717,    765,   2038,   2711,   2703,   2685,   2659,   2632,   2608,   2588,   2568,   2545,   2514,   2502,   2400,   2697,   3124,   3144,   3160,   3182,   3205,   3236,   3271,   3284, 
+   597,    595,    589,    556,    539,    529,    569,    579,    568,    548,    546,    541,    541,    572,    544,    557,    559,    572,    590,   1515,   2397,   2504,   2591,   2643,   2671,   2737,   2828,   2872,   2911,   2853,   2797,   2757,   2704,   2686,   2645,   2628,   2573,   2536,   2479,   1319,    772,    803,   1972,   2651,   2678,   2660,   2638,   2612,   2589,   2561,   2549,   2529,   2501,   2487,   2181,   2956,   3108,   3129,   3151,   3162,   3188,   3228,   3246,   3264, 
+   570,    559,    539,    555,    549,    495,    530,    527,    515,    517,    521,    507,    546,    558,    567,    575,    568,    579,    603,   1757,   2954,   2941,   2927,   2917,   2895,   2836,   2811,   2792,   2775,   2746,   2718,   2676,   2639,   2604,   2584,   2553,   2514,   2480,   2430,   1404,    742,    792,   1903,   2580,   2635,   2634,   2608,   2590,   2567,   2545,   2525,   2512,   2490,   2468,   2214,   3008,   3073,   3104,   3125,   3147,   3169,   3202,   3225,   3243, 
+   542,    537,    496,    526,    517,    485,    511,    491,    499,    525,    527,    520,    533,    549,    571,    579,    592,    613,    624,   1489,   2888,   2869,   2863,   2858,   2819,   2785,   2762,   2760,   2733,   2701,   2674,   2634,   2585,   2565,   2539,   2514,   2472,   2437,   2398,   1504,    743,    793,   1845,   2507,   2582,   2601,   2585,   2569,   2549,   2526,   2516,   2492,   2476,   2463,   2258,   3005,   3057,   3077,   3107,   3128,   3145,   3176,   3202,   3230, 
+   540,    540,    519,    520,    523,    501,    529,    522,    523,    556,    549,    553,    566,    581,    595,    612,    622,    616,    620,   1258,   2833,   2820,   2816,   2802,   2761,   2755,   2730,   2696,   2683,   2659,   2624,   2575,   2527,   2508,   2479,   2475,   2432,   2387,   2351,   1606,    724,    804,   1789,   2424,   2543,   2568,   2562,   2547,   2527,   2516,   2497,   2483,   2467,   2440,   2335,   2984,   3026,   3069,   3079,   3111,   3130,   3162,   3186,   3221, 
+   520,    521,    518,    519,    522,    521,    518,    533,    548,    574,    557,    575,    591,    584,    634,    628,    648,    652,    655,   1117,   2788,   2781,   2756,   2748,   2718,   2690,   2665,   2655,   2642,   2605,   2558,   2532,   2498,   2470,   2452,   2420,   2394,   2356,   2325,   1718,    720,    785,   1722,   2361,   2497,   2541,   2533,   2521,   2504,   2491,   2482,   2466,   2447,   2418,   2421,   2970,   3011,   3033,   3064,   3094,   3118,   3146,   3174,   3205, 
+   487,    491,    511,    494,    507,    512,    513,    541,    552,    594,    589,    606,    621,    648,    658,    643,    668,    710,    701,    935,   2761,   2735,   2729,   2704,   2682,   2644,   2627,   2619,   2581,   2567,   2521,   2495,   2460,   2441,   2408,   2390,   2368,   2331,   2287,   1804,    680,    761,   1679,   2286,   2451,   2494,   2504,   2507,   2490,   2484,   2461,   2449,   2430,   2237,   2647,   2955,   2990,   3029,   3041,   3062,   3103,   3123,   3144,   3189, 
+   496,    508,    498,    508,    507,    518,    531,    576,    584,    616,    638,    663,    686,    673,    675,    726,    722,    747,    723,    766,   2719,   2694,   2669,   2660,   2628,   2607,   2585,   2570,   2557,   2520,   2491,   2464,   2428,   2394,   2376,   2334,   2323,   2286,   2252,   1903,    652,    766,   1639,   2231,   2399,   2454,   2486,   2494,   2477,   2466,   2441,   2438,   2413,   2108,   2831,   2941,   2980,   3007,   3027,   3050,   3080,   3114,   3154,   3173, 
+   495,    486,    490,    498,    524,    553,    585,    618,    649,    660,    702,    715,    730,    717,    767,    811,    792,    798,    766,    687,   2596,   2647,   2638,   2627,   2597,   2573,   2550,   2523,   2511,   2486,   2443,   2434,   2391,   2362,   2337,   2319,   2295,   2260,   2226,   1991,    675,    783,   1601,   2176,   2363,   2437,   2471,   2473,   2466,   2461,   2446,   2418,   2408,   2133,   2849,   2936,   2969,   2990,   3010,   3043,   3065,   3085,   3127,   3159, 
+   467,    468,    474,    538,    612,    646,    664,    699,    758,    756,    782,    766,    774,    787,    807,    814,    837,    827,    754,    679,   2378,   2604,   2579,   2564,   2561,   2535,   2498,   2479,   2462,   2439,   2415,   2382,   2352,   2336,   2303,   2283,   2255,   2232,   2201,   2084,    624,    742,   1563,   2134,   2329,   2415,   2446,   2459,   2452,   2445,   2430,   2418,   2397,   2188,   2838,   2907,   2953,   2976,   3001,   3024,   3059,   3078,   3107,   3141, 
+   556,    525,    563,    644,    726,    728,    760,    779,    782,    800,    796,    811,    795,    793,    801,    827,    817,    791,    763,    684,   2170,   2560,   2538,   2520,   2496,   2476,   2459,   2435,   2413,   2395,   2366,   2346,   2321,   2290,   2269,   2254,   2224,   2207,   2173,   2131,    627,    711,   1523,   2098,   2292,   2401,   2436,   2450,   2443,   2429,   2429,   2401,   2385,   2232,   2841,   2896,   2932,   2966,   2990,   3018,   3042,   3066,   3097,   3127, 
+   722,    761,    770,    791,    790,    777,    774,    799,    804,    789,    834,    819,    826,    840,    833,    773,    781,    761,    745,    695,   2024,   2536,   2503,   2490,   2461,   2438,   2416,   2402,   2367,   2359,   2329,   2316,   2287,   2263,   2243,   2213,   2193,   2170,   2149,   2102,    685,    654,   1490,   2063,   2272,   2377,   2429,   2443,   2441,   2442,   2413,   2398,   2328,   2339,   2834,   2894,   2922,   2962,   2985,   3006,   3024,   3051,   3083,   3107, 
+   835,    839,    848,    876,    859,    852,    854,    865,    876,    876,    873,    861,    867,    848,    849,    810,    809,    783,    732,    685,   1857,   2486,   2453,   2431,   2413,   2399,   2370,   2357,   2342,   2316,   2300,   2283,   2248,   2235,   2206,   2179,   2165,   2151,   2117,   2089,    779,    628,   1471,   2032,   2240,   2365,   2421,   2441,   2445,   2433,   2417,   2383,   2112,   2617,   2816,   2874,   2907,   2952,   2983,   2997,   3026,   3059,   3078,   3113, 
+   869,    885,    899,    888,    916,    923,    930,    898,    878,    883,    883,    862,    889,    877,    865,    865,    833,    809,    723,    681,   1664,   2447,   2414,   2410,   2381,   2361,   2348,   2324,   2309,   2285,   2254,   2243,   2218,   2203,   2172,   2152,   2141,   2113,   2091,   2070,    896,    614,   1449,   2001,   2220,   2355,   2422,   2448,   2441,   2443,   2426,   2394,   2080,   2713,   2833,   2879,   2910,   2944,   2973,   3000,   3029,   3051,   3066,   3099, 
+   901,    919,    912,    906,    933,    931,    938,    901,    886,    902,    909,    871,    883,    898,    882,    883,    836,    838,    773,    727,   1494,   2409,   2398,   2367,   2345,   2325,   2298,   2282,   2261,   2248,   2235,   2209,   2191,   2166,   2146,   2127,   2104,   2091,   2071,   2043,    998,    601,   1403,   1973,   2211,   2344,   2422,   2459,   2467,   2463,   2437,   2392,   2119,   2742,   2837,   2889,   2914,   2964,   2987,   3010,   3032,   3051,   3075,   3093, 
+   915,    928,    917,    901,    950,    953,    940,    911,    963,    939,    900,    880,    870,    878,    896,    881,    851,    878,    818,    732,   1368,   2370,   2343,   2331,   2307,   2288,   2264,   2246,   2228,   2215,   2191,   2180,   2155,   2134,   2110,   2101,   2075,   2057,   2035,   2023,   1092,    577,   1376,   1945,   2187,   2339,   2429,   2467,   2485,   2489,   2451,   2396,   2183,   2763,   2867,   2903,   2945,   2973,   2997,   3036,   3035,   3056,   3071,   3104, 
+   908,    941,    938,    959,    917,    909,    962,    951,    927,    924,    921,    916,    892,    914,    941,    917,    862,    864,    812,    784,   1225,   2335,   2317,   2293,   2267,   2252,   2233,   2220,   2206,   2184,   2155,   2142,   2122,   2104,   2096,   2074,   2047,   2029,   2004,   1999,   1192,    558,   1330,   1914,   2160,   2326,   2425,   2477,   2501,   2496,   2490,   2414,   2252,   2790,   2895,   2950,   2982,   3003,   3024,   3029,   3050,   3071,   3090,   3100, 
+   926,    958,    979,    994,    997,   1005,   1024,    978,    963,    966,   1011,    995,    982,    982,    977,    953,    953,    919,    884,    824,   1127,   2282,   2262,   2247,   2221,   2216,   2194,   2184,   2166,   2144,   2128,   2110,   2092,   2082,   2058,   2039,   2022,   2003,   1994,   1984,   1314,    589,   1271,   1846,   2063,   2205,   2361,   2503,   2622,   2714,   2885,   2920,   2813,   2915,   2997,   3027,   3043,   3064,   3072,   3077,   3086,   3083,   3099,   3113, 
+   999,   1022,   1063,   1065,   1096,   1121,   1120,   1045,   1020,   1093,   1081,   1048,   1070,   1034,   1038,   1035,   1020,   1019,    977,    933,   1076,   2234,   2215,   2206,   2187,   2169,   2164,   2139,   2123,   2106,   2093,   2076,   2065,   2042,   2023,   2019,   1999,   1979,   1962,   1947,   1442,    597,   1611,   2673,   3267,   3760,   4051,   4268,   4409,   4487,   4499,   4448,   4487,   3221,   3109,   3108,   3125,   3118,   3126,   3126,   3129,   3128,   3118,   3130, 
+  1039,   1088,   1149,   1152,   1185,   1124,   1158,   1125,   1119,   1152,   1122,   1147,   1180,   1123,   1148,   1141,   1122,   1124,   1070,   1011,   1048,   2184,   2180,   2169,   2147,   2141,   2120,   2115,   2095,   2081,   2068,   2045,   2032,   2016,   2001,   1983,   1964,   1948,   1935,   1933,   1557,    679,   1746,   3143,   3738,   4129,   4374,   4533,   4609,   4680,   4701,   4601,   4695,   4410,   3224,   3171,   3173,   3185,   3190,   3178,   3170,   3158,   3163,   3170, 
+  1164,   1149,   1188,   1202,   1204,   1171,   1222,   1230,   1233,   1225,   1238,   1291,   1303,   1260,   1258,   1264,   1269,   1263,   1230,   1197,   1124,   2132,   2141,   2129,   2110,   2104,   2075,   2062,   2051,   2040,   2031,   2018,   2004,   1982,   1968,   1960,   1933,   1926,   1909,   1903,   1656,    782,   1716,   3590,   4179,   4470,   4633,   4749,   4811,   4855,   4858,   4861,   4692,   4857,   4125,   3234,   3230,   3223,   3214,   3220,   3204,   3200,   3192,   3188, 
+  1180,   1222,   1229,   1260,   1300,   1303,   1361,   1373,   1394,   1398,   1405,   1420,   1434,   1402,   1412,   1424,   1443,   1470,   1462,   1406,   1288,   2052,   2078,   2088,   2078,   2059,   2051,   2040,   2021,   2006,   1998,   1988,   1963,   1952,   1946,   1940,   1919,   1908,   1890,   1878,   1745,    926,   1688,   4130,   4552,   4779,   4907,   4987,   5024,   5012,   4997,   4991,   4966,   4776,   4938,   3828,   3269,   3275,   3277,   3259,   3239,   3230,   3215,   3210, 
+  1350,   1388,   1430,   1444,   1502,   1525,   1554,   1590,   1576,   1571,   1579,   1589,   1608,   1632,   1691,   1731,   1720,   1768,   1812,   1772,   1606,   1986,   2060,   2060,   2047,   2040,   2018,   2003,   1993,   1974,   1964,   1946,   1931,   1922,   1919,   1903,   1892,   1874,   1867,   1858,   1787,   1033,   1413,   4565,   4994,   5139,   5194,   5202,   5157,   5126,   5095,   5095,   5058,   4968,   4884,   4924,   3561,   3305,   3302,   3290,   3272,   3260,   3245,   3212, 
+  1589,   1641,   1691,   1724,   1760,   1761,   1776,   1786,   1794,   1846,   1856,   1859,   1946,   1979,   2025,   2049,   2017,   2093,   2062,   2000,   1807,   1934,   2035,   2023,   2012,   1994,   1992,   1973,   1965,   1952,   1939,   1919,   1907,   1889,   1878,   1878,   1858,   1858,   1832,   1819,   1789,    984,   1176,   3864,   5435,   5423,   5391,   5348,   5294,   5255,   5201,   5179,   5147,   5123,   4969,   5009,   4786,   3395,   3329,   3323,   3297,   3280,   3255,   3241, 
+  1787,   1839,   1839,   1869,   1913,   1927,   1953,   1976,   2009,   2026,   2032,   2087,   2100,   2085,   2119,   2131,   2160,   2177,   2143,   2142,   1964,   1901,   1987,   1987,   1973,   1962,   1959,   1953,   1944,   1918,   1899,   1873,   1867,   1859,   1856,   1842,   1817,   1727,   1585,   1525,   1453,   1066,   1139,   1872,   5535,   5575,   5504,   5461,   5396,   5358,   5314,   5270,   5220,   5199,   5150,   4964,   5071,   4512,   3325,   3331,   3318,   3308,   3291,   3247, 
+  1852,   1879,   1879,   1904,   1948,   1972,   2033,   2070,   2082,   2159,   2168,   2191,   2190,   2187,   2246,   2246,   2253,   2293,   2297,   2269,   2173,   1916,   1968,   1966,   1950,   1924,   1916,   1900,   1835,   1662,   1533,   1478,   1423,   1340,   1311,   1258,   1196,   1187,   1235,   1264,   1215,   1223,   1185,   1197,   3887,   5727,   5641,   5569,   5517,   5460,   5414,   5364,   5312,   5292,   5253,   5197,   5001,   5128,   4155,   3336,   3343,   3331,   3317,   3276, 
+  1896,   1922,   1941,   1979,   2047,   2111,   2172,   2182,   2150,   2237,   2234,   2283,   2311,   2297,   2391,   2336,   2347,   2370,   2320,   2327,   2235,   1791,   1579,   1568,   1542,   1487,   1441,   1391,   1383,   1428,   1438,   1467,   1415,   1395,   1381,   1354,   1336,   1351,   1327,   1282,   1243,   1244,   1255,   1215,   1640,   5596,   5754,   5672,   5618,   5548,   5500,   5465,   5402,   5369,   5316,   5261,   5163,   5068,   5116,   3829,   3345,   3354,   3331,   3301, 
+  1969,   2070,   2097,   2099,   2140,   2186,   2192,   2199,   2240,   2246,   2265,   2278,   2273,   2290,   2292,   2192,   2145,   2107,   2052,   1957,   1891,   1798,   1684,   1673,   1629,   1589,   1571,   1528,   1513,   1474,   1428,   1402,   1368,   1411,   1428,   1399,   1354,   1373,   1347,   1339,   1303,   1268,   1326,   1284,   1251,   3583,   5842,   5773,   5701,   5666,   5593,   5559,   5488,   5427,   5384,   5341,   5285,   5105,   5125,   5009,   3565,   3369,   3361,   3323, 
+  1998,   2141,   2188,   2152,   2161,   2188,   2169,   2168,   2185,   2206,   2188,   2167,   2099,   2064,   2016,   1968,   1909,   1816,   1770,   1737,   1663,   1640,   1610,   1576,   1587,   1584,   1547,   1483,   1519,   1496,   1448,   1455,   1396,   1428,   1425,   1392,   1427,   1359,   1345,   1351,   1294,   1266,   1291,   1300,   1274,   1491,   5444,   5875,   5792,   5734,   5661,   5615,   5546,   5494,   5427,   5394,   5337,   5282,   5061,   5173,   4843,   3426,   3360,   3343, 
+  2085,   2151,   2142,   2092,   2133,   2115,   2094,   2093,   2056,   2031,   2015,   1976,   1886,   1848,   1836,   1749,   1699,   1662,   1687,   1627,   1626,   1643,   1578,   1562,   1596,   1561,   1569,   1536,   1526,   1505,   1504,   1455,   1479,   1463,   1433,   1398,   1396,   1346,   1325,   1299,   1254,   1268,   1282,   1305,   1283,   1296,   2991,   5966,   5900,   5832,   5764,   5687,   5614,   5568,   5517,   5444,   5407,   5340,   5265,   5099,   5188,   4517,   3392,   3364, 
+  2071,   2090,   2060,   2039,   2021,   2006,   1949,   1962,   1909,   1880,   1828,   1817,   1771,   1738,   1736,   1696,   1705,   1663,   1587,   1564,   1625,   1587,   1540,   1574,   1542,   1554,   1579,   1558,   1513,   1540,   1510,   1496,   1480,   1480,   1457,   1439,   1440,   1391,   1346,   1341,   1307,   1274,   1241,   1271,   1241,   1230,   1302,   4820,   5969,   5912,   5842,   5760,   5688,   5618,   5560,   5503,   5453,   5407,   5350,   5226,   5170,   5239,   4122,   3368, 
+  1988,   1944,   1899,   1923,   1918,   1891,   1819,   1806,   1777,   1785,   1746,   1714,   1721,   1689,   1698,   1660,   1658,   1620,   1552,   1580,   1600,   1563,   1584,   1581,   1562,   1568,   1539,   1567,   1552,   1510,   1506,   1525,   1506,   1452,   1437,   1417,   1403,   1378,   1325,   1345,   1357,   1304,   1300,   1285,   1236,   1216,   1204,   1809,   5703,   5979,   5893,   5831,   5755,   5683,   5622,   5554,   5501,   5459,   5419,   5381,   5175,   5260,   5195,   3768, 
+  1855,   1825,   1871,   1812,   1809,   1762,   1733,   1701,   1688,   1695,   1690,   1662,   1688,   1711,   1719,   1663,   1660,   1640,   1592,   1587,   1564,   1561,   1606,   1578,   1581,   1540,   1544,   1523,   1521,   1469,   1433,   1457,   1472,   1377,   1398,   1374,   1378,   1364,   1329,   1321,   1320,   1286,   1252,   1191,   1181,   1175,   1178,   1191,   2830,   5961,   5937,   5885,   5793,   5730,   5668,   5596,   5559,   5503,   5478,   5413,   5394,   5159,   5273,   5039, 
+  1711,   1739,   1722,   1716,   1681,   1656,   1666,   1657,   1657,   1632,   1664,   1653,   1674,   1666,   1652,   1634,   1649,   1626,   1616,   1593,   1533,   1538,   1548,   1554,   1526,   1489,   1477,   1504,   1478,   1447,   1410,   1417,   1398,   1361,   1345,   1353,   1348,   1325,   1297,   1284,   1253,   1216,   1180,   1159,   1149,   1131,   1118,   1176,   1182,   4002,   5927,   5905,   5823,   5728,   5698,   5660,   5604,   5586,   5532,   5518,   5459,   5373,   5223,   5274, 
+  1665,   1622,   1605,   1651,   1633,   1653,   1607,   1688,   1684,   1660,   1650,   1643,   1637,   1643,   1613,   1645,   1626,   1602,   1578,   1538,   1519,   1525,   1511,   1485,   1443,   1433,   1386,   1447,   1387,   1384,   1403,   1427,   1388,   1341,   1319,   1314,   1289,   1325,   1290,   1250,   1229,   1223,   1196,   1212,   1162,   1133,   1095,   1148,   1158,   1311,   4754,   5895,   5850,   5815,   5755,   5695,   5650,   5644,   5589,   5558,   5534,   5498,   5321,   5298, 
+  1639,   1632,   1685,   1638,   1601,   1627,   1669,   1707,   1652,   1595,   1596,   1605,   1576,   1626,   1560,   1578,   1589,   1555,   1514,   1522,   1497,   1499,   1441,   1441,   1451,   1384,   1383,   1365,   1361,   1329,   1309,   1360,   1365,   1312,   1308,   1332,   1325,   1354,   1307,   1300,   1256,   1282,   1262,   1258,   1227,   1165,   1111,   1169,   1194,   1160,   1583,   5171,   5846,   5833,   5795,   5752,   5703,   5685,   5641,   5612,   5591,   5543,   5492,   5230, 
+//INT32 g_stat[y_stat_num * x_stat_num] =
+  1708,   1707,   1750,   1761,   1786,   1770,   1824,   1850,   1879,   1871,   1869,   1876,   1851,   1809,   1836,   1886,   1849,   1831,   1804,   1775,   1785,   1823,   1802,   1746,   1669,   1673,   1719,   1669,   1659,   1652,   1629,   1683,   1646,   1685,   1705,   1700,   1741,   1670,   1653,   1560,   1527,   1520,   1523,   4114,   5688,   5635,   5550,   5495,   5433,   5356,   5288,   5236,   5165,   5127,   5080,   5017,   4958,   5266,   6645,   6696,   6700,   6698,   6693,   6630, 
+  1719,   1728,   1752,   1749,   1709,   1639,   1682,   1715,   1730,   1748,   1722,   1804,   1804,   1793,   1792,   1785,   1782,   1763,   1807,   1726,   1695,   1735,   1759,   1697,   1698,   1666,   1589,   1519,   1506,   1491,   1572,   1580,   1572,   1612,   1619,   1651,   1646,   1588,   1511,   1394,   1428,   1402,   1457,   4369,   5627,   5588,   5516,   5457,   5391,   5313,   5246,   5195,   5131,   5083,   5047,   4997,   4667,   5779,   6596,   6645,   6658,   6673,   6662,   6657, 
+  1661,   1618,   1618,   1627,   1612,   1529,   1531,   1550,   1571,   1556,   1577,   1606,   1624,   1646,   1654,   1635,   1605,   1631,   1691,   1679,   1631,   1656,   1698,   1674,   1705,   1696,   1622,   1472,   1424,   1405,   1493,   1465,   1472,   1529,   1545,   1561,   1541,   1479,   1418,   1350,   1312,   1277,   1346,   4729,   5566,   5535,   5460,   5397,   5337,   5272,   5191,   5143,   5074,   5046,   4982,   4945,   4328,   6296,   6552,   6583,   6594,   6609,   6640,   6639, 
+  1567,   1614,   1604,   1557,   1589,   1537,   1516,   1542,   1506,   1488,   1487,   1525,   1584,   1573,   1536,   1558,   1511,   1581,   1566,   1588,   1579,   1611,   1654,   1672,   1707,   1673,   1558,   1457,   1392,   1449,   1435,   1376,   1405,   1447,   1462,   1534,   1501,   1456,   1383,   1406,   1328,   1243,   1386,   5168,   5511,   5471,   5400,   5340,   5273,   5206,   5144,   5091,   5029,   4990,   4928,   4888,   4438,   6355,   6470,   6477,   6499,   6542,   6566,   6574, 
+  1593,   1566,   1617,   1614,   1586,   1601,   1592,   1524,   1467,   1475,   1423,   1509,   1568,   1566,   1513,   1495,   1499,   1463,   1447,   1444,   1445,   1497,   1587,   1607,   1644,   1582,   1609,   1538,   1453,   1461,   1397,   1417,   1439,   1435,   1499,   1520,   1447,   1374,   1350,   1362,   1352,   1348,   1769,   5429,   5462,   5411,   5357,   5292,   5229,   5159,   5104,   5060,   5008,   4945,   4885,   4850,   4628,   6319,   6409,   6436,   6441,   6457,   6506,   6527, 
+  1606,   1546,   1615,   1639,   1600,   1614,   1599,   1541,   1507,   1507,   1533,   1499,   1476,   1484,   1501,   1467,   1478,   1447,   1438,   1466,   1397,   1404,   1474,   1551,   1566,   1500,   1571,   1570,   1498,   1457,   1401,   1474,   1475,   1476,   1451,   1440,   1409,   1349,   1315,   1293,   1358,   1349,   2200,   5450,   5401,   5359,   5295,   5249,   5187,   5120,   5066,   5017,   4965,   4909,   4844,   4802,   4834,   6270,   6327,   6361,   6374,   6414,   6462,   6477, 
+  1529,   1592,   1550,   1474,   1499,   1466,   1508,   1497,   1481,   1493,   1488,   1505,   1521,   1497,   1503,   1398,   1376,   1361,   1440,   1436,   1386,   1400,   1449,   1503,   1511,   1475,   1554,   1524,   1539,   1451,   1399,   1469,   1450,   1434,   1386,   1405,   1368,   1340,   1358,   1368,   1413,   1405,   2647,   5396,   5339,   5293,   5241,   5204,   5143,   5083,   5021,   4968,   4921,   4869,   4807,   4703,   5106,   6215,   6262,   6286,   6316,   6348,   6390,   6430, 
+  1367,   1494,   1399,   1341,   1345,   1380,   1430,   1424,   1475,   1499,   1530,   1497,   1512,   1522,   1451,   1371,   1266,   1261,   1384,   1366,   1317,   1352,   1406,   1471,   1484,   1487,   1482,   1454,   1435,   1463,   1432,   1475,   1394,   1379,   1362,   1361,   1406,   1424,   1376,   1402,   1478,   1445,   3002,   5339,   5282,   5237,   5180,   5143,   5090,   5032,   4976,   4920,   4869,   4817,   4773,   4309,   5659,   6160,   6191,   6222,   6240,   6293,   6324,   6360, 
+  1540,   1511,   1521,   1470,   1425,   1476,   1492,   1530,   1527,   1539,   1607,   1548,   1591,   1519,   1476,   1372,   1283,   1320,   1396,   1328,   1303,   1410,   1415,   1375,   1464,   1435,   1404,   1415,   1434,   1453,   1432,   1469,   1394,   1379,   1320,   1295,   1378,   1401,   1357,   1395,   1418,   1400,   3253,   5273,   5229,   5182,   5123,   5089,   5038,   4986,   4928,   4877,   4832,   4782,   4729,   4216,   5915,   6098,   6123,   6158,   6191,   6238,   6269,   6303, 
+  1570,   1577,   1558,   1536,   1569,   1574,   1496,   1510,   1536,   1548,   1550,   1515,   1505,   1441,   1399,   1422,   1390,   1355,   1399,   1346,   1407,   1443,   1388,   1442,   1429,   1401,   1398,   1417,   1404,   1442,   1455,   1421,   1394,   1398,   1362,   1334,   1359,   1262,   1260,   1337,   1340,   1364,   3511,   5225,   5165,   5124,   5083,   5038,   5003,   4951,   4882,   4853,   4795,   4750,   4709,   4364,   5917,   6044,   6061,   6089,   6133,   6186,   6218,   6272, 
+  1447,   1449,   1517,   1516,   1544,   1505,   1520,   1555,   1626,   1559,   1505,   1507,   1477,   1450,   1420,   1453,   1420,   1398,   1326,   1352,   1425,   1456,   1417,   1394,   1382,   1427,   1422,   1389,   1410,   1448,   1414,   1425,   1421,   1473,   1417,   1404,   1386,   1380,   1414,   1458,   1367,   1429,   3728,   5158,   5128,   5070,   5035,   4988,   4941,   4904,   4859,   4811,   4757,   4716,   4693,   4540,   5891,   5983,   6013,   6046,   6068,   6125,   6165,   6207, 
+  1449,   1427,   1483,   1460,   1461,   1461,   1497,   1529,   1512,   1502,   1472,   1479,   1469,   1423,   1415,   1424,   1394,   1395,   1368,   1349,   1395,   1403,   1371,   1355,   1416,   1414,   1435,   1408,   1434,   1475,   1444,   1489,   1501,   1515,   1509,   1488,   1504,   1503,   1499,   1565,   1582,   1637,   3832,   5094,   5063,   5014,   4979,   4945,   4896,   4856,   4822,   4776,   4742,   4694,   4638,   4714,   5859,   5934,   5958,   5987,   6018,   6070,   6107,   6156, 
+  1463,   1487,   1480,   1452,   1379,   1402,   1405,   1478,   1415,   1364,   1339,   1363,   1381,   1389,   1344,   1348,   1340,   1359,   1395,   1368,   1460,   1402,   1387,   1383,   1419,   1461,   1534,   1512,   1601,   1850,   2050,   2273,   2450,   2658,   2843,   3031,   3126,   3268,   3383,   2122,   1679,   1785,   3812,   5019,   5001,   4971,   4930,   4903,   4859,   4820,   4784,   4751,   4698,   4665,   4472,   5016,   5831,   5884,   5913,   5967,   5992,   6024,   6060,   6113, 
+  1421,   1416,   1395,   1342,   1295,   1257,   1347,   1373,   1350,   1298,   1306,   1287,   1292,   1359,   1300,   1321,   1316,   1363,   1404,   2962,   4509,   4684,   4834,   4927,   4966,   5090,   5239,   5303,   5339,   5223,   5133,   5049,   4957,   4922,   4848,   4803,   4702,   4631,   4540,   2638,   1802,   1880,   3680,   4902,   4967,   4930,   4896,   4870,   4824,   4780,   4748,   4710,   4670,   4628,   4086,   5526,   5791,   5850,   5872,   5908,   5942,   5994,   6011,   6076, 
+  1373,   1338,   1293,   1321,   1313,   1186,   1264,   1256,   1216,   1230,   1239,   1213,   1295,   1316,   1353,   1366,   1342,   1379,   1426,   3313,   5386,   5377,   5363,   5354,   5295,   5195,   5147,   5124,   5097,   5050,   4995,   4923,   4851,   4781,   4759,   4705,   4635,   4551,   4459,   2757,   1737,   1851,   3553,   4765,   4888,   4885,   4842,   4817,   4782,   4737,   4705,   4675,   4627,   4605,   4114,   5613,   5751,   5794,   5842,   5871,   5900,   5955,   5982,   6031, 
+  1300,   1286,   1202,   1250,   1239,   1167,   1214,   1179,   1187,   1242,   1259,   1241,   1270,   1309,   1359,   1372,   1409,   1460,   1478,   2858,   5290,   5263,   5255,   5233,   5172,   5121,   5080,   5072,   5024,   4966,   4919,   4853,   4764,   4736,   4694,   4644,   4568,   4492,   4403,   2936,   1741,   1850,   3442,   4631,   4806,   4827,   4805,   4773,   4744,   4705,   4677,   4654,   4610,   4568,   4213,   5607,   5700,   5755,   5794,   5830,   5871,   5898,   5938,   5999, 
+  1294,   1293,   1243,   1248,   1245,   1198,   1258,   1245,   1242,   1320,   1300,   1312,   1349,   1378,   1413,   1458,   1473,   1474,   1475,   2467,   5187,   5164,   5169,   5139,   5081,   5057,   5015,   4980,   4942,   4898,   4837,   4763,   4675,   4654,   4601,   4570,   4502,   4425,   4347,   3080,   1696,   1881,   3351,   4503,   4716,   4773,   4759,   4743,   4710,   4680,   4646,   4619,   4583,   4548,   4345,   5570,   5665,   5713,   5750,   5795,   5824,   5856,   5905,   5959, 
+  1247,   1239,   1243,   1240,   1255,   1250,   1234,   1258,   1297,   1360,   1332,   1364,   1394,   1390,   1492,   1488,   1541,   1556,   1557,   2254,   5113,   5089,   5074,   5043,   4997,   4953,   4922,   4887,   4872,   4817,   4734,   4691,   4637,   4588,   4550,   4499,   4443,   4369,   4307,   3278,   1670,   1836,   3244,   4372,   4635,   4720,   4719,   4713,   4684,   4657,   4622,   4595,   4555,   4497,   4512,   5540,   5621,   5678,   5709,   5755,   5789,   5822,   5866,   5909, 
+  1174,   1187,   1228,   1187,   1229,   1215,   1219,   1286,   1318,   1401,   1395,   1433,   1467,   1532,   1560,   1534,   1590,   1688,   1662,   1960,   5062,   5028,   5023,   4978,   4931,   4885,   4845,   4833,   4767,   4749,   4671,   4630,   4573,   4531,   4475,   4438,   4400,   4321,   4252,   3420,   1580,   1789,   3163,   4252,   4550,   4630,   4674,   4679,   4656,   4627,   4597,   4574,   4529,   4172,   4926,   5518,   5586,   5638,   5655,   5709,   5745,   5794,   5830,   5875, 
+  1190,   1219,   1186,   1209,   1219,   1234,   1273,   1376,   1384,   1463,   1500,   1564,   1622,   1598,   1605,   1715,   1707,   1756,   1711,   1694,   4975,   4927,   4912,   4901,   4852,   4816,   4773,   4760,   4719,   4669,   4621,   4562,   4503,   4455,   4416,   4344,   4313,   4251,   4174,   3583,   1516,   1799,   3110,   4149,   4474,   4571,   4631,   4651,   4635,   4599,   4575,   4558,   4512,   3931,   5269,   5503,   5563,   5597,   5640,   5689,   5717,   5757,   5795,   5852, 
+  1184,   1172,   1191,   1197,   1259,   1327,   1399,   1473,   1545,   1575,   1665,   1699,   1720,   1692,   1807,   1908,   1881,   1877,   1801,   1608,   4755,   4854,   4855,   4829,   4806,   4756,   4711,   4673,   4642,   4604,   4535,   4508,   4441,   4394,   4351,   4302,   4259,   4200,   4124,   3733,   1556,   1837,   3048,   4055,   4406,   4548,   4612,   4624,   4607,   4595,   4574,   4534,   4489,   3980,   5304,   5469,   5543,   5580,   5615,   5655,   5684,   5722,   5765,   5819, 
+  1129,   1132,   1146,   1297,   1450,   1536,   1574,   1654,   1783,   1786,   1839,   1815,   1814,   1854,   1893,   1922,   1968,   1955,   1783,   1598,   4356,   4789,   4745,   4734,   4722,   4688,   4625,   4605,   4566,   4522,   4477,   4420,   4373,   4333,   4272,   4236,   4185,   4135,   4081,   3889,   1447,   1742,   2981,   3971,   4349,   4512,   4573,   4596,   4592,   4571,   4553,   4515,   4473,   4076,   5305,   5446,   5512,   5560,   5591,   5641,   5665,   5703,   5743,   5797, 
+  1354,   1282,   1365,   1550,   1712,   1725,   1796,   1821,   1856,   1873,   1872,   1912,   1878,   1871,   1882,   1946,   1920,   1867,   1802,   1617,   4002,   4700,   4692,   4647,   4625,   4588,   4562,   4533,   4494,   4450,   4396,   4355,   4313,   4258,   4215,   4175,   4129,   4090,   4011,   3942,   1437,   1678,   2900,   3896,   4287,   4469,   4551,   4581,   4583,   4567,   4533,   4496,   4447,   4173,   5305,   5424,   5479,   5544,   5574,   5610,   5646,   5691,   5722,   5786, 
+  1736,   1830,   1818,   1880,   1872,   1830,   1826,   1885,   1895,   1886,   1950,   1929,   1943,   1967,   1967,   1837,   1851,   1807,   1756,   1646,   3766,   4664,   4612,   4587,   4558,   4521,   4497,   4463,   4410,   4380,   4329,   4301,   4251,   4200,   4164,   4127,   4081,   4024,   3981,   3886,   1517,   1548,   2858,   3841,   4238,   4447,   4534,   4577,   4568,   4552,   4529,   4492,   4350,   4384,   5293,   5410,   5454,   5526,   5572,   5609,   5640,   5676,   5708,   5749, 
+  1982,   1998,   2004,   2049,   2027,   2020,   2019,   2023,   2059,   2061,   2051,   2022,   2041,   1989,   1998,   1918,   1904,   1851,   1738,   1616,   3482,   4574,   4537,   4502,   4490,   4456,   4409,   4380,   4360,   4306,   4275,   4239,   4178,   4152,   4107,   4060,   4018,   4002,   3925,   3873,   1679,   1488,   2823,   3797,   4197,   4425,   4533,   4576,   4574,   4561,   4538,   4492,   3957,   4875,   5282,   5400,   5466,   5519,   5556,   5618,   5626,   5665,   5695,   5743, 
+  2066,   2084,   2118,   2101,   2157,   2168,   2179,   2096,   2058,   2069,   2062,   2038,   2075,   2047,   2030,   2024,   1962,   1901,   1716,   1612,   3161,   4503,   4462,   4459,   4429,   4400,   4380,   4337,   4305,   4265,   4210,   4171,   4129,   4095,   4045,   4010,   3987,   3934,   3879,   3839,   1861,   1450,   2796,   3758,   4170,   4416,   4542,   4597,   4604,   4587,   4550,   4483,   3887,   5067,   5311,   5390,   5452,   5525,   5570,   5608,   5637,   5664,   5702,   5740, 
+  2138,   2165,   2138,   2153,   2194,   2185,   2196,   2123,   2091,   2119,   2144,   2060,   2076,   2100,   2059,   2084,   1973,   1972,   1821,   1712,   2900,   4446,   4443,   4401,   4376,   4341,   4298,   4265,   4233,   4203,   4169,   4121,   4076,   4043,   4010,   3959,   3926,   3889,   3840,   3798,   2019,   1416,   2711,   3708,   4140,   4408,   4557,   4613,   4635,   4622,   4568,   4475,   3969,   5141,   5333,   5413,   5470,   5532,   5591,   5627,   5644,   5683,   5711,   5735, 
+  2159,   2183,   2169,   2129,   2239,   2248,   2211,   2145,   2240,   2199,   2109,   2075,   2051,   2050,   2102,   2079,   2021,   2066,   1932,   1728,   2697,   4372,   4344,   4335,   4312,   4284,   4241,   4213,   4171,   4137,   4107,   4064,   4028,   3993,   3946,   3923,   3877,   3835,   3788,   3766,   2181,   1365,   2668,   3665,   4108,   4406,   4571,   4653,   4681,   4671,   4613,   4494,   4096,   5188,   5380,   5461,   5511,   5581,   5612,   5654,   5674,   5706,   5723,   5761, 
+  2161,   2209,   2222,   2259,   2176,   2145,   2268,   2230,   2182,   2174,   2176,   2166,   2122,   2143,   2189,   2154,   2040,   2042,   1929,   1854,   2466,   4331,   4314,   4287,   4247,   4215,   4189,   4165,   4133,   4090,   4039,   4005,   3967,   3935,   3915,   3871,   3823,   3787,   3748,   3726,   2357,   1324,   2591,   3602,   4065,   4380,   4573,   4657,   4713,   4720,   4675,   4541,   4233,   5263,   5456,   5547,   5601,   5660,   5681,   5702,   5719,   5731,   5748,   5767, 
+  2204,   2273,   2295,   2332,   2350,   2366,   2401,   2307,   2271,   2284,   2360,   2334,   2314,   2304,   2296,   2248,   2246,   2169,   2088,   1940,   2341,   4246,   4212,   4214,   4180,   4157,   4129,   4092,   4071,   4041,   3991,   3958,   3932,   3900,   3845,   3809,   3783,   3748,   3725,   3701,   2569,   1387,   2493,   3470,   3878,   4163,   4473,   4741,   4969,   5122,   5460,   5503,   5289,   5489,   5648,   5713,   5736,   5764,   5776,   5786,   5793,   5802,   5809,   5829, 
+  2354,   2408,   2487,   2511,   2579,   2628,   2609,   2464,   2373,   2540,   2531,   2460,   2500,   2414,   2433,   2444,   2405,   2388,   2290,   2180,   2314,   4178,   4165,   4143,   4125,   4085,   4074,   4027,   3997,   3965,   3933,   3901,   3869,   3833,   3802,   3771,   3743,   3708,   3670,   3644,   2793,   1411,   3158,   5076,   6197,   7095,   7655,   8053,   8291,   8452,   8457,   8343,   8436,   6102,   5866,   5880,   5874,   5888,   5890,   5874,   5868,   5857,   5858,   5869, 
+  2440,   2549,   2675,   2669,   2764,   2637,   2707,   2626,   2599,   2680,   2637,   2676,   2729,   2613,   2669,   2665,   2620,   2618,   2493,   2353,   2328,   4101,   4108,   4097,   4057,   4033,   4005,   3975,   3942,   3916,   3889,   3854,   3813,   3786,   3747,   3706,   3675,   3656,   3625,   3612,   3000,   1579,   3423,   5926,   7070,   7814,   8277,   8546,   8709,   8811,   8861,   8681,   8809,   8302,   6086,   6009,   6009,   6019,   6003,   5985,   5953,   5931,   5935,   5938, 
+  2703,   2690,   2767,   2809,   2819,   2765,   2864,   2852,   2844,   2853,   2867,   3003,   3019,   2940,   2908,   2934,   2934,   2896,   2828,   2741,   2523,   4033,   4053,   4021,   3997,   3977,   3937,   3898,   3869,   3852,   3814,   3803,   3771,   3736,   3692,   3667,   3624,   3612,   3566,   3563,   3166,   1784,   3415,   6780,   7902,   8441,   8757,   8987,   9097,   9157,   9173,   9173,   8840,   9120,   7822,   6112,   6109,   6105,   6096,   6069,   6051,   6022,   6007,   6007, 
+  2753,   2863,   2884,   2948,   3044,   3027,   3171,   3169,   3223,   3221,   3229,   3290,   3292,   3236,   3253,   3262,   3315,   3351,   3300,   3165,   2888,   3924,   3972,   3980,   3948,   3917,   3887,   3861,   3824,   3796,   3764,   3740,   3710,   3677,   3657,   3627,   3587,   3566,   3527,   3522,   3310,   2055,   3423,   7794,   8604,   9044,   9284,   9441,   9511,   9486,   9444,   9407,   9359,   8985,   9292,   7247,   6192,   6190,   6180,   6159,   6129,   6094,   6077,   6057, 
+  3104,   3214,   3285,   3333,   3493,   3514,   3576,   3627,   3594,   3586,   3598,   3657,   3671,   3731,   3809,   3895,   3881,   3945,   3976,   3880,   3524,   3851,   3945,   3944,   3897,   3883,   3833,   3798,   3777,   3737,   3705,   3670,   3647,   3630,   3603,   3574,   3538,   3516,   3496,   3469,   3376,   2298,   3086,   8589,   9443,   9721,   9834,   9851,   9782,   9707,   9658,   9603,   9530,   9396,   9206,   9261,   6771,   6264,   6251,   6238,   6200,   6178,   6147,   6130, 
+  3569,   3715,   3861,   3913,   4020,   3978,   4038,   4048,   4068,   4165,   4207,   4227,   4372,   4431,   4489,   4549,   4512,   4609,   4571,   4413,   3984,   3818,   3912,   3891,   3849,   3810,   3782,   3760,   3717,   3696,   3669,   3638,   3597,   3562,   3529,   3521,   3497,   3479,   3442,   3409,   3373,   2228,   2767,   7417,  10266,  10224,  10185,  10114,  10033,   9951,   9849,   9797,   9731,   9670,   9389,   9436,   9039,   6454,   6310,   6304,   6262,   6229,   6204,   6195, 
+  4019,   4135,   4194,   4268,   4354,   4351,   4435,   4485,   4563,   4607,   4653,   4759,   4759,   4750,   4802,   4825,   4863,   4859,   4791,   4771,   4360,   3804,   3826,   3822,   3792,   3762,   3738,   3720,   3692,   3640,   3605,   3560,   3527,   3511,   3498,   3463,   3410,   3225,   2977,   2933,   2882,   2522,   2743,   3975,  10423,  10516,  10427,  10334,  10260,  10144,  10041,   9957,   9892,   9816,   9757,   9377,   9586,   8551,   6339,   6348,   6329,   6311,   6271,   6244, 
+  4214,   4307,   4306,   4400,   4499,   4536,   4663,   4738,   4780,   4918,   4964,   5001,   4992,   4975,   5049,   5050,   5047,   5115,   5086,   5020,   4790,   3891,   3801,   3788,   3748,   3698,   3666,   3621,   3493,   3160,   2976,   2958,   2926,   2834,   2872,   2834,   2785,   2847,   2951,   3018,   2904,   2932,   2852,   2880,   7456,  10771,  10658,  10548,  10450,  10354,  10248,  10141,  10057,  10007,   9908,   9822,   9446,   9653,   7919,   6371,   6381,   6373,   6346,   6312, 
+  4315,   4379,   4436,   4564,   4749,   4869,   4954,   4972,   4937,   5078,   5106,   5184,   5230,   5184,   5335,   5248,   5226,   5259,   5166,   5127,   4934,   3757,   3141,   3193,   3240,   3217,   3204,   3172,   3256,   3387,   3367,   3469,   3343,   3305,   3297,   3228,   3172,   3203,   3155,   3040,   2952,   2971,   2990,   2899,   3576,  10535,  10825,  10732,  10611,  10510,  10409,  10322,  10232,  10143,  10046,   9964,   9758,   9576,   9669,   7335,   6389,   6412,   6381,   6366, 
+  4469,   4679,   4747,   4801,   4894,   4973,   4988,   5000,   5085,   5108,   5164,   5198,   5170,   5199,   5168,   5004,   4902,   4790,   4657,   4496,   4364,   4188,   3934,   3928,   3850,   3780,   3720,   3611,   3577,   3500,   3389,   3326,   3247,   3336,   3376,   3308,   3219,   3251,   3194,   3148,   3086,   3007,   3115,   3035,   2969,   6935,  11018,  10895,  10783,  10688,  10599,  10480,  10369,  10264,  10189,  10103,  10014,   9674,   9699,   9539,   6838,   6453,   6437,   6420, 
+  4534,   4785,   4907,   4907,   4914,   4952,   4961,   4981,   5009,   5045,   5006,   4975,   4829,   4771,   4687,   4592,   4450,   4287,   4166,   4117,   3956,   3884,   3810,   3732,   3756,   3754,   3667,   3515,   3598,   3536,   3433,   3449,   3307,   3385,   3377,   3301,   3360,   3193,   3157,   3190,   3062,   2988,   3058,   3074,   3009,   3350,  10225,  11039,  10927,  10835,  10711,  10618,  10507,  10414,  10278,  10213,  10113,  10009,   9594,   9789,   9194,   6578,   6451,   6452, 
+  4710,   4784,   4836,   4756,   4832,   4809,   4809,   4816,   4745,   4704,   4675,   4601,   4456,   4377,   4334,   4158,   4054,   3963,   4014,   3872,   3865,   3889,   3749,   3716,   3777,   3691,   3707,   3644,   3613,   3544,   3562,   3450,   3489,   3472,   3380,   3315,   3298,   3177,   3134,   3085,   2965,   2997,   3023,   3087,   3030,   3057,   5881,  11188,  11092,  10971,  10850,  10747,  10630,  10536,  10410,  10324,  10233,  10131,  10024,   9671,   9890,   8656,   6511,   6482, 
+  4682,   4702,   4652,   4658,   4633,   4608,   4511,   4537,   4416,   4402,   4306,   4290,   4189,   4136,   4109,   4035,   4050,   3963,   3781,   3729,   3855,   3770,   3655,   3753,   3665,   3670,   3720,   3672,   3571,   3620,   3543,   3523,   3487,   3485,   3429,   3399,   3385,   3270,   3152,   3154,   3078,   3017,   2933,   3007,   2947,   2915,   3052,   9051,  11176,  11086,  10996,  10874,  10740,  10635,  10523,  10404,  10329,  10236,  10148,   9927,   9811,   9980,   7924,   6496, 
+  4476,   4395,   4352,   4400,   4422,   4372,   4239,   4235,   4157,   4206,   4116,   4061,   4082,   4019,   4037,   3958,   3963,   3852,   3693,   3765,   3803,   3706,   3754,   3755,   3697,   3686,   3651,   3683,   3649,   3571,   3544,   3578,   3553,   3419,   3375,   3336,   3309,   3246,   3130,   3175,   3187,   3071,   3056,   3037,   2928,   2891,   2863,   3860,  10598,  11199,  11078,  10977,  10854,  10742,  10619,  10507,  10417,  10342,  10260,  10195,   9818,   9996,   9930,   7261, 
+  4271,   4217,   4339,   4180,   4195,   4118,   4072,   4001,   3977,   3997,   3971,   3926,   3990,   4017,   4042,   3931,   3942,   3883,   3764,   3772,   3695,   3679,   3808,   3729,   3724,   3625,   3632,   3597,   3565,   3460,   3389,   3430,   3469,   3266,   3302,   3243,   3251,   3228,   3132,   3129,   3117,   3039,   2959,   2829,   2817,   2817,   2805,   2834,   5582,  11094,  11149,  11061,  10926,  10824,  10690,  10599,  10507,  10436,  10377,  10297,  10209,   9790,  10053,   9654, 
+  3985,   4064,   4042,   4026,   3962,   3893,   3928,   3910,   3896,   3876,   3906,   3895,   3931,   3909,   3894,   3854,   3886,   3837,   3823,   3751,   3628,   3648,   3652,   3659,   3627,   3514,   3489,   3546,   3478,   3403,   3335,   3354,   3321,   3227,   3188,   3221,   3198,   3138,   3083,   3049,   2960,   2893,   2815,   2774,   2742,   2722,   2670,   2797,   2836,   7582,  11105,  11104,  10977,  10835,  10758,  10686,  10601,  10547,  10472,  10384,  10309,  10172,   9861,  10031, 
+  3930,   3836,   3796,   3896,   3855,   3889,   3801,   3967,   3949,   3874,   3869,   3860,   3864,   3879,   3815,   3872,   3844,   3809,   3753,   3673,   3611,   3630,   3592,   3539,   3440,   3417,   3303,   3437,   3296,   3276,   3320,   3387,   3297,   3189,   3151,   3140,   3080,   3159,   3071,   2988,   2936,   2913,   2847,   2881,   2774,   2721,   2617,   2759,   2787,   3006,   8933,  11053,  11019,  10955,  10844,  10780,  10672,  10645,  10560,  10499,  10414,  10365,  10068,  10002, 
+  3846,   3868,   3983,   3878,   3760,   3815,   3903,   4012,   3873,   3759,   3765,   3809,   3725,   3838,   3685,   3742,   3748,   3695,   3609,   3634,   3577,   3562,   3447,   3437,   3464,   3311,   3313,   3266,   3263,   3187,   3133,   3251,   3252,   3122,   3124,   3181,   3162,   3213,   3106,   3086,   2996,   3035,   2986,   2987,   2907,   2780,   2684,   2798,   2869,   2806,   3495,   9743,  11017,  10995,  10910,  10843,  10773,  10726,  10624,  10561,  10503,  10443,  10378,   9893, 
+//INT32 b_stat[y_stat_num * x_stat_num]
+  1131,   1129,   1157,   1166,   1167,   1172,   1204,   1209,   1237,   1218,   1226,   1224,   1213,   1180,   1196,   1229,   1206,   1195,   1178,   1153,   1152,   1178,   1173,   1140,   1090,   1085,   1118,   1086,   1082,   1067,   1053,   1076,   1057,   1084,   1089,   1083,   1110,   1063,   1050,    992,    966,    954,    948,   1949,   2620,   2606,   2580,   2573,   2555,   2540,   2510,   2478,   2458,   2452,   2422,   2412,   2358,   2511,   3170,   3206,   3211,   3210,   3220,   3180, 
+  1143,   1132,   1145,   1144,   1123,   1080,   1103,   1113,   1129,   1139,   1112,   1175,   1177,   1164,   1166,   1160,   1163,   1144,   1173,   1122,   1101,   1122,   1134,   1103,   1101,   1084,   1034,    985,    976,    963,   1013,   1018,   1003,   1031,   1029,   1053,   1044,   1005,    962,    883,    901,    879,    907,   2056,   2611,   2589,   2572,   2552,   2538,   2506,   2480,   2464,   2444,   2420,   2395,   2379,   2228,   2733,   3142,   3177,   3176,   3186,   3191,   3174, 
+  1096,   1064,   1065,   1075,   1071,   1008,   1008,   1019,   1030,   1023,   1040,   1050,   1054,   1067,   1079,   1066,   1049,   1064,   1101,   1098,   1061,   1079,   1102,   1091,   1108,   1102,   1057,    960,    922,    916,    963,    943,    950,    980,    984,    995,    986,    941,    902,    857,    826,    804,    839,   2210,   2592,   2579,   2557,   2540,   2520,   2486,   2467,   2439,   2413,   2397,   2372,   2359,   2067,   3008,   3122,   3130,   3150,   3165,   3187,   3158, 
+  1035,   1067,   1062,   1024,   1043,   1018,    997,   1006,    992,    982,    981,    998,   1034,   1020,   1003,   1011,    988,   1029,   1018,   1038,   1028,   1051,   1070,   1085,   1106,   1090,   1010,    949,    905,    935,    927,    890,    907,    922,    935,    974,    955,    929,    882,    892,    838,    778,    843,   2406,   2576,   2560,   2540,   2512,   2481,   2455,   2438,   2417,   2388,   2365,   2338,   2332,   2110,   3026,   3083,   3094,   3090,   3107,   3129,   3123, 
+  1056,   1036,   1062,   1063,   1037,   1046,   1037,    999,    969,    970,    930,    991,   1028,   1024,    987,    977,    978,    959,    939,    946,    946,    979,   1034,   1045,   1064,   1028,   1043,   1000,    940,    946,    911,    915,    930,    927,    961,    966,    924,    880,    858,    861,    853,    851,   1009,   2539,   2563,   2548,   2531,   2500,   2488,   2444,   2428,   2405,   2365,   2347,   2323,   2305,   2194,   3008,   3052,   3058,   3064,   3082,   3105,   3102, 
+  1063,   1025,   1069,   1071,   1048,   1052,   1049,   1004,    990,    995,   1012,    987,    972,    969,    981,    958,    961,    949,    944,    952,    916,    919,    962,   1009,   1017,    980,   1017,   1013,    971,    954,    911,    951,    954,    948,    922,    923,    901,    864,    836,    823,    864,    854,   1186,   2555,   2546,   2520,   2501,   2482,   2456,   2439,   2401,   2378,   2357,   2332,   2307,   2283,   2299,   2979,   3015,   3028,   3033,   3046,   3074,   3066, 
+  1013,   1047,   1022,    969,    988,    969,    999,    980,    969,    978,    978,    982,    998,    983,    985,    917,    899,    891,    939,    942,    911,    920,    941,    980,    981,    964,   1013,    987,    999,    944,    913,    948,    937,    924,    888,    903,    880,    861,    863,    862,    896,    893,   1378,   2532,   2524,   2492,   2487,   2475,   2439,   2408,   2387,   2364,   2330,   2315,   2283,   2228,   2420,   2948,   2972,   2982,   2994,   3024,   3037,   3036, 
+   906,    989,    926,    890,    897,    911,    938,    939,    970,    977,   1009,    980,    994,    992,    953,    897,    833,    828,    909,    903,    869,    889,    922,    955,    963,    967,    962,    946,    934,    946,    933,    954,    903,    892,    876,    870,    901,    910,    875,    888,    939,    913,   1531,   2507,   2488,   2476,   2443,   2438,   2414,   2383,   2359,   2337,   2312,   2294,   2265,   2047,   2668,   2916,   2934,   2952,   2965,   2991,   3004,   2995, 
+  1021,   1002,   1003,    973,    937,    972,    983,   1007,   1001,   1009,   1049,   1018,   1037,    991,    962,    895,    843,    868,    915,    872,    860,    925,    923,    900,    948,    934,    919,    929,    936,    940,    929,    948,    911,    889,    848,    834,    884,    897,    868,    890,    898,    891,   1625,   2472,   2459,   2446,   2419,   2409,   2378,   2366,   2327,   2312,   2298,   2263,   2241,   1987,   2795,   2888,   2890,   2919,   2931,   2944,   2960,   2972, 
+  1034,   1028,   1026,   1014,   1036,   1032,    989,    991,   1013,   1014,   1019,    993,    989,    947,    921,    931,    916,    888,    915,    892,    920,    948,    908,    942,    933,    921,    916,    923,    918,    943,    945,    921,    902,    905,    882,    869,    876,    812,    805,    857,    854,    862,   1726,   2454,   2435,   2412,   2398,   2381,   2359,   2345,   2319,   2306,   2276,   2249,   2228,   2052,   2783,   2860,   2864,   2886,   2891,   2927,   2942,   2941, 
+   961,    954,    991,    996,   1011,    997,    994,   1020,   1072,   1021,    987,    989,    971,    947,    939,    950,    934,    915,    872,    886,    933,    953,    928,    912,    908,    932,    930,    912,    924,    949,    922,    925,    922,    954,    921,    905,    894,    890,    905,    931,    875,    908,   1813,   2419,   2419,   2394,   2384,   2365,   2338,   2325,   2302,   2284,   2259,   2233,   2225,   2141,   2787,   2834,   2846,   2859,   2879,   2888,   2911,   2928, 
+   961,    951,    976,    961,    964,    967,    988,   1008,    987,    983,    970,    975,    966,    937,    934,    935,    913,    920,    900,    888,    921,    920,    904,    896,    931,    939,    944,    925,    938,    973,    950,    969,    979,    984,    974,    961,    972,    964,    962,    993,   1009,   1043,   1859,   2389,   2384,   2370,   2350,   2336,   2325,   2302,   2284,   2265,   2237,   2225,   2190,   2216,   2776,   2806,   2816,   2838,   2849,   2872,   2890,   2906, 
+   969,    983,    980,    962,    919,    923,    926,    964,    934,    903,    886,    896,    910,    915,    887,    889,    891,    899,    918,    905,    962,    922,    915,    911,    932,    957,   1001,    985,   1039,   1155,   1226,   1320,   1382,   1466,   1538,   1617,   1628,   1684,   1721,   1234,   1069,   1130,   1835,   2360,   2359,   2351,   2336,   2321,   2295,   2276,   2266,   2256,   2228,   2205,   2118,   2364,   2763,   2794,   2786,   2819,   2820,   2846,   2866,   2862, 
+   948,    940,    922,    895,    866,    837,    886,    902,    889,    862,    857,    850,    858,    899,    864,    871,    874,    900,    927,   1553,   2202,   2276,   2343,   2366,   2384,   2430,   2486,   2500,   2500,   2445,   2405,   2365,   2329,   2311,   2278,   2253,   2213,   2167,   2121,   1395,   1141,   1195,   1775,   2310,   2348,   2334,   2317,   2302,   2286,   2275,   2253,   2228,   2209,   2194,   1935,   2606,   2749,   2765,   2774,   2795,   2806,   2832,   2838,   2848, 
+   911,    894,    865,    876,    867,    794,    840,    835,    805,    809,    818,    800,    858,    870,    898,    902,    888,    913,    938,   1662,   2517,   2514,   2515,   2504,   2485,   2440,   2422,   2416,   2403,   2380,   2357,   2328,   2294,   2264,   2253,   2231,   2191,   2152,   2098,   1426,   1108,   1173,   1715,   2250,   2310,   2311,   2297,   2286,   2269,   2252,   2231,   2216,   2190,   2173,   1940,   2656,   2715,   2736,   2762,   2778,   2787,   2803,   2828,   2821, 
+   869,    864,    805,    835,    818,    781,    806,    782,    784,    823,    830,    822,    837,    872,    898,    908,    935,    964,    970,   1478,   2471,   2463,   2467,   2462,   2434,   2415,   2403,   2405,   2381,   2357,   2337,   2316,   2270,   2259,   2239,   2218,   2182,   2136,   2091,   1493,   1112,   1180,   1667,   2192,   2271,   2291,   2282,   2265,   2245,   2239,   2217,   2196,   2190,   2164,   1986,   2654,   2698,   2719,   2738,   2751,   2774,   2777,   2787,   2796, 
+   859,    860,    835,    825,    829,    803,    825,    819,    822,    868,    859,    866,    898,    907,    933,    957,    973,    974,    975,   1322,   2435,   2431,   2434,   2424,   2397,   2395,   2379,   2358,   2346,   2332,   2304,   2271,   2234,   2229,   2211,   2196,   2158,   2110,   2071,   1552,   1084,   1198,   1624,   2130,   2235,   2264,   2255,   2240,   2233,   2223,   2202,   2191,   2169,   2147,   2054,   2636,   2676,   2697,   2710,   2729,   2739,   2750,   2774,   2773, 
+   831,    828,    824,    820,    832,    826,    816,    835,    858,    897,    873,    904,    921,    920,    988,    982,   1020,   1024,   1024,   1261,   2409,   2398,   2393,   2384,   2369,   2348,   2335,   2323,   2319,   2301,   2264,   2248,   2226,   2206,   2189,   2161,   2129,   2088,   2052,   1626,   1063,   1173,   1579,   2076,   2198,   2242,   2240,   2236,   2219,   2207,   2193,   2181,   2162,   2113,   2131,   2632,   2666,   2681,   2685,   2714,   2724,   2737,   2744,   2771, 
+   787,    798,    818,    791,    813,    811,    806,    854,    874,    928,    928,    944,    972,   1006,   1026,   1011,   1048,   1112,   1087,   1153,   2386,   2371,   2372,   2360,   2339,   2325,   2307,   2300,   2272,   2268,   2238,   2220,   2200,   2181,   2151,   2137,   2111,   2070,   2031,   1689,   1007,   1147,   1545,   2013,   2159,   2192,   2217,   2216,   2208,   2194,   2182,   2167,   2143,   1980,   2317,   2609,   2646,   2660,   2675,   2691,   2709,   2722,   2729,   2728, 
+   794,    811,    790,    809,    806,    820,    845,    908,    914,    966,    991,   1029,   1057,   1049,   1067,   1122,   1125,   1154,   1122,   1058,   2353,   2331,   2329,   2327,   2313,   2298,   2281,   2273,   2256,   2238,   2211,   2192,   2167,   2150,   2128,   2098,   2083,   2037,   1988,   1749,    964,   1148,   1527,   1959,   2123,   2168,   2192,   2208,   2204,   2182,   2168,   2158,   2130,   1858,   2496,   2599,   2632,   2655,   2657,   2671,   2689,   2709,   2708,   2713, 
+   797,    789,    795,    802,    836,    881,    924,    972,   1013,   1032,   1103,   1117,   1127,   1110,   1180,   1244,   1227,   1227,   1175,   1047,   2242,   2296,   2305,   2298,   2291,   2276,   2252,   2245,   2226,   2211,   2183,   2169,   2142,   2115,   2097,   2073,   2048,   2014,   1974,   1801,    987,   1175,   1500,   1931,   2096,   2159,   2190,   2197,   2189,   2180,   2167,   2146,   2129,   1881,   2512,   2591,   2625,   2644,   2648,   2673,   2664,   2687,   2694,   2711, 
+   760,    764,    772,    866,    954,   1013,   1039,   1091,   1170,   1168,   1207,   1189,   1195,   1214,   1236,   1251,   1280,   1270,   1165,   1048,   2078,   2266,   2262,   2263,   2266,   2245,   2224,   2208,   2195,   2177,   2156,   2122,   2106,   2096,   2068,   2042,   2018,   1986,   1956,   1861,    926,   1116,   1476,   1887,   2065,   2151,   2183,   2187,   2185,   2178,   2166,   2146,   2124,   1919,   2523,   2579,   2614,   2643,   2648,   2654,   2662,   2677,   2697,   2697, 
+   910,    862,    912,   1019,   1130,   1140,   1179,   1191,   1213,   1221,   1222,   1243,   1225,   1221,   1232,   1267,   1250,   1220,   1179,   1058,   1932,   2233,   2229,   2221,   2218,   2202,   2197,   2185,   2164,   2142,   2117,   2103,   2082,   2054,   2033,   2012,   1987,   1967,   1923,   1873,    903,   1080,   1434,   1848,   2040,   2125,   2174,   2183,   2177,   2179,   2160,   2131,   2113,   1980,   2517,   2575,   2603,   2626,   2638,   2647,   2650,   2673,   2678,   2695, 
+  1138,   1204,   1201,   1234,   1228,   1207,   1204,   1240,   1239,   1245,   1278,   1269,   1272,   1284,   1283,   1202,   1216,   1188,   1155,   1083,   1843,   2211,   2193,   2198,   2188,   2171,   2160,   2159,   2128,   2123,   2092,   2082,   2058,   2031,   2010,   1990,   1965,   1944,   1911,   1861,    916,   1001,   1419,   1831,   2012,   2119,   2172,   2184,   2178,   2173,   2163,   2136,   2075,   2068,   2519,   2566,   2593,   2615,   2630,   2652,   2656,   2676,   2692,   2685, 
+  1294,   1300,   1316,   1333,   1324,   1326,   1324,   1324,   1347,   1347,   1347,   1316,   1335,   1300,   1305,   1254,   1246,   1215,   1142,   1063,   1731,   2167,   2166,   2159,   2158,   2148,   2130,   2126,   2106,   2088,   2065,   2052,   2020,   2008,   1987,   1967,   1943,   1921,   1887,   1859,    972,    968,   1405,   1808,   2001,   2112,   2169,   2197,   2198,   2180,   2162,   2138,   1890,   2307,   2513,   2569,   2592,   2624,   2641,   2646,   2653,   2668,   2682,   2687, 
+  1357,   1370,   1380,   1369,   1402,   1417,   1423,   1365,   1347,   1344,   1348,   1332,   1345,   1335,   1315,   1318,   1277,   1250,   1132,   1061,   1609,   2127,   2132,   2143,   2139,   2131,   2120,   2101,   2082,   2066,   2039,   2030,   2000,   1983,   1965,   1947,   1926,   1902,   1873,   1842,   1046,    945,   1400,   1790,   1994,   2110,   2171,   2201,   2205,   2189,   2171,   2139,   1843,   2402,   2521,   2565,   2595,   2632,   2637,   2659,   2668,   2669,   2689,   2691, 
+  1396,   1413,   1404,   1414,   1428,   1420,   1430,   1391,   1370,   1391,   1395,   1349,   1359,   1363,   1345,   1353,   1287,   1288,   1187,   1123,   1514,   2116,   2122,   2126,   2111,   2101,   2087,   2071,   2057,   2042,   2029,   2001,   1982,   1964,   1941,   1921,   1904,   1875,   1860,   1831,   1099,    920,   1362,   1767,   1981,   2109,   2181,   2210,   2227,   2211,   2182,   2144,   1889,   2444,   2542,   2577,   2607,   2628,   2650,   2665,   2677,   2687,   2694,   2706, 
+  1411,   1426,   1427,   1400,   1457,   1460,   1445,   1399,   1455,   1434,   1386,   1356,   1347,   1345,   1370,   1361,   1319,   1350,   1258,   1135,   1436,   2082,   2083,   2099,   2084,   2079,   2059,   2044,   2025,   2015,   2003,   1984,   1960,   1942,   1913,   1898,   1880,   1858,   1835,   1819,   1160,    891,   1339,   1749,   1971,   2110,   2195,   2233,   2246,   2234,   2202,   2146,   1962,   2477,   2562,   2609,   2630,   2651,   2675,   2688,   2688,   2700,   2716,   2705, 
+  1423,   1450,   1458,   1486,   1431,   1410,   1482,   1454,   1436,   1421,   1418,   1414,   1393,   1401,   1427,   1407,   1335,   1338,   1262,   1219,   1358,   2074,   2067,   2072,   2067,   2044,   2041,   2031,   2008,   1994,   1972,   1952,   1935,   1914,   1903,   1883,   1861,   1843,   1819,   1806,   1239,    864,   1314,   1723,   1952,   2099,   2196,   2232,   2264,   2258,   2241,   2167,   2019,   2511,   2605,   2648,   2673,   2696,   2698,   2702,   2717,   2721,   2731,   2721, 
+  1452,   1486,   1500,   1525,   1532,   1541,   1559,   1507,   1495,   1491,   1545,   1522,   1509,   1503,   1492,   1468,   1464,   1425,   1368,   1272,   1348,   2039,   2034,   2039,   2036,   2024,   2008,   2004,   1988,   1971,   1953,   1934,   1921,   1896,   1877,   1861,   1835,   1823,   1807,   1797,   1329,    901,   1278,   1658,   1855,   1998,   2151,   2277,   2388,   2476,   2622,   2643,   2535,   2616,   2693,   2729,   2743,   2758,   2759,   2752,   2744,   2757,   2744,   2756, 
+  1536,   1569,   1618,   1632,   1670,   1702,   1691,   1609,   1556,   1654,   1648,   1610,   1621,   1572,   1583,   1587,   1561,   1550,   1495,   1422,   1382,   2020,   2015,   2015,   2015,   1997,   1992,   1966,   1951,   1940,   1924,   1916,   1893,   1874,   1856,   1841,   1823,   1803,   1790,   1771,   1430,    918,   1611,   2438,   2995,   3419,   3690,   3876,   3998,   4070,   4062,   3986,   4046,   2931,   2814,   2819,   2811,   2816,   2808,   2802,   2800,   2791,   2787,   2780, 
+  1592,   1663,   1740,   1740,   1789,   1714,   1757,   1714,   1693,   1749,   1720,   1737,   1765,   1691,   1732,   1731,   1702,   1692,   1619,   1521,   1442,   1991,   1995,   1999,   1981,   1972,   1955,   1943,   1935,   1917,   1905,   1881,   1869,   1856,   1833,   1807,   1789,   1782,   1766,   1754,   1513,   1015,   1754,   2845,   3413,   3773,   4000,   4142,   4208,   4248,   4270,   4171,   4213,   3984,   2911,   2876,   2891,   2872,   2869,   2861,   2855,   2838,   2833,   2823, 
+  1746,   1747,   1790,   1816,   1833,   1802,   1867,   1857,   1845,   1849,   1858,   1936,   1936,   1889,   1874,   1889,   1887,   1857,   1813,   1739,   1595,   1974,   1983,   1969,   1954,   1950,   1932,   1914,   1902,   1894,   1874,   1861,   1852,   1827,   1807,   1793,   1767,   1762,   1739,   1741,   1580,   1121,   1802,   3262,   3825,   4084,   4239,   4348,   4402,   4418,   4424,   4423,   4252,   4365,   3764,   2925,   2925,   2921,   2916,   2904,   2896,   2874,   2857,   2859, 
+  1787,   1861,   1874,   1923,   1984,   1962,   2045,   2047,   2077,   2080,   2077,   2113,   2108,   2080,   2078,   2090,   2114,   2126,   2066,   1985,   1811,   1947,   1956,   1958,   1940,   1932,   1914,   1900,   1881,   1868,   1849,   1843,   1821,   1806,   1792,   1773,   1753,   1737,   1720,   1714,   1638,   1273,   1867,   3764,   4168,   4378,   4505,   4571,   4601,   4582,   4564,   4537,   4504,   4308,   4442,   3493,   2972,   2974,   2964,   2958,   2935,   2918,   2911,   2897, 
+  2009,   2063,   2117,   2158,   2250,   2255,   2295,   2315,   2297,   2297,   2306,   2347,   2329,   2363,   2400,   2440,   2445,   2457,   2456,   2393,   2168,   1964,   1954,   1951,   1930,   1921,   1892,   1874,   1864,   1842,   1826,   1800,   1795,   1776,   1766,   1748,   1732,   1706,   1700,   1685,   1647,   1404,   1847,   4140,   4556,   4702,   4769,   4757,   4746,   4700,   4672,   4638,   4606,   4522,   4405,   4449,   3259,   2998,   3000,   2988,   2977,   2966,   2960,   2940, 
+  2268,   2356,   2447,   2482,   2553,   2526,   2567,   2573,   2589,   2629,   2674,   2678,   2741,   2771,   2796,   2819,   2815,   2833,   2819,   2717,   2463,   1990,   1950,   1926,   1910,   1886,   1872,   1854,   1834,   1824,   1805,   1792,   1768,   1747,   1732,   1717,   1703,   1697,   1675,   1655,   1640,   1371,   1769,   3707,   4944,   4948,   4922,   4890,   4858,   4823,   4780,   4728,   4701,   4657,   4519,   4518,   4354,   3111,   3030,   3022,   3019,   3010,   3002,   2969, 
+  2551,   2612,   2657,   2723,   2769,   2756,   2815,   2843,   2901,   2922,   2966,   3014,   3004,   3015,   3012,   3035,   3045,   3012,   2977,   2950,   2692,   2037,   1915,   1900,   1886,   1869,   1850,   1843,   1821,   1794,   1776,   1755,   1733,   1727,   1719,   1694,   1663,   1565,   1469,   1497,   1520,   1608,   1797,   2305,   5021,   5074,   5031,   5000,   4952,   4908,   4856,   4817,   4772,   4731,   4695,   4493,   4581,   4125,   3055,   3056,   3050,   3045,   3044,   3025, 
+  2680,   2729,   2722,   2807,   2866,   2894,   2970,   3006,   3046,   3121,   3137,   3167,   3162,   3138,   3152,   3151,   3140,   3166,   3123,   3092,   2928,   2116,   1895,   1882,   1861,   1836,   1810,   1789,   1713,   1573,   1531,   1585,   1637,   1635,   1716,   1749,   1769,   1847,   1904,   1939,   1874,   1890,   1853,   1874,   3736,   5179,   5133,   5093,   5064,   5003,   4969,   4892,   4861,   4825,   4777,   4726,   4529,   4634,   3814,   3069,   3071,   3066,   3076,   3045, 
+  2733,   2793,   2817,   2916,   3036,   3093,   3147,   3151,   3147,   3221,   3221,   3269,   3296,   3263,   3306,   3260,   3240,   3242,   3192,   3143,   3036,   2161,   1644,   1748,   1846,   1902,   1953,   1994,   2099,   2194,   2170,   2242,   2165,   2148,   2125,   2090,   2056,   2053,   2015,   1950,   1894,   1911,   1923,   1873,   2136,   5053,   5202,   5178,   5131,   5093,   5025,   4964,   4935,   4880,   4855,   4809,   4710,   4580,   4621,   3558,   3079,   3103,   3097,   3077, 
+  2837,   2953,   2987,   3059,   3113,   3154,   3153,   3158,   3231,   3239,   3264,   3286,   3257,   3257,   3231,   3170,   3099,   3013,   2936,   2851,   2772,   2682,   2532,   2531,   2498,   2441,   2408,   2336,   2312,   2265,   2201,   2159,   2103,   2152,   2180,   2131,   2063,   2089,   2043,   2008,   1977,   1927,   1986,   1952,   1907,   3532,   5264,   5236,   5217,   5163,   5105,   5068,   5011,   4956,   4905,   4868,   4823,   4655,   4646,   4588,   3302,   3109,   3125,   3107, 
+  2871,   3014,   3077,   3115,   3125,   3125,   3156,   3177,   3195,   3205,   3186,   3171,   3098,   3048,   3011,   2945,   2858,   2769,   2703,   2675,   2570,   2524,   2480,   2432,   2430,   2434,   2378,   2279,   2327,   2284,   2223,   2234,   2151,   2189,   2177,   2116,   2156,   2037,   2023,   2031,   1955,   1908,   1955,   1961,   1926,   2067,   4905,   5291,   5248,   5212,   5159,   5113,   5068,   5018,   4963,   4926,   4868,   4836,   4607,   4705,   4451,   3181,   3144,   3132, 
+  2972,   3002,   3035,   3023,   3056,   3053,   3068,   3085,   3049,   3021,   3008,   2970,   2885,   2840,   2826,   2709,   2658,   2594,   2612,   2527,   2522,   2536,   2449,   2419,   2460,   2402,   2403,   2358,   2337,   2290,   2296,   2230,   2241,   2234,   2171,   2127,   2115,   2031,   2002,   1984,   1910,   1917,   1930,   1964,   1949,   1957,   3067,   5333,   5301,   5258,   5214,   5182,   5132,   5083,   5026,   4982,   4936,   4888,   4804,   4657,   4758,   4191,   3161,   3136, 
+  2956,   2963,   2940,   2967,   2945,   2947,   2894,   2926,   2852,   2850,   2794,   2796,   2734,   2713,   2685,   2636,   2651,   2580,   2467,   2444,   2518,   2456,   2385,   2447,   2381,   2384,   2406,   2367,   2305,   2328,   2271,   2268,   2245,   2236,   2197,   2171,   2167,   2095,   2016,   2015,   1975,   1938,   1881,   1928,   1896,   1865,   1944,   4367,   5316,   5307,   5255,   5238,   5194,   5136,   5092,   5025,   4986,   4952,   4897,   4790,   4724,   4805,   3844,   3133, 
+  2842,   2799,   2790,   2803,   2834,   2810,   2743,   2738,   2690,   2733,   2679,   2650,   2661,   2625,   2640,   2578,   2587,   2510,   2412,   2458,   2476,   2421,   2448,   2447,   2403,   2377,   2363,   2376,   2354,   2295,   2277,   2294,   2281,   2201,   2166,   2143,   2119,   2081,   2006,   2029,   2030,   1958,   1951,   1945,   1872,   1854,   1845,   2232,   5008,   5318,   5299,   5274,   5233,   5182,   5130,   5080,   5031,   4986,   4957,   4896,   4725,   4815,   4788,   3504, 
+  2729,   2721,   2788,   2710,   2700,   2657,   2635,   2599,   2599,   2604,   2575,   2552,   2590,   2614,   2616,   2554,   2559,   2520,   2436,   2448,   2399,   2395,   2460,   2414,   2411,   2349,   2359,   2325,   2299,   2235,   2185,   2213,   2231,   2113,   2119,   2092,   2089,   2074,   2005,   2000,   1994,   1945,   1889,   1823,   1817,   1799,   1808,   1824,   2925,   5251,   5307,   5302,   5245,   5220,   5154,   5112,   5059,   5014,   4990,   4951,   4902,   4693,   4805,   4602, 
+  2593,   2648,   2625,   2623,   2569,   2538,   2569,   2544,   2549,   2533,   2537,   2527,   2549,   2541,   2534,   2502,   2519,   2484,   2478,   2434,   2371,   2383,   2380,   2375,   2349,   2279,   2257,   2293,   2254,   2198,   2151,   2179,   2153,   2086,   2064,   2077,   2063,   2025,   1989,   1956,   1910,   1866,   1819,   1795,   1770,   1761,   1723,   1797,   1819,   3742,   5297,   5307,   5275,   5196,   5183,   5134,   5093,   5045,   4999,   4989,   4931,   4880,   4711,   4760, 
+  2581,   2524,   2487,   2536,   2518,   2541,   2490,   2573,   2563,   2522,   2523,   2506,   2520,   2524,   2490,   2516,   2497,   2496,   2450,   2406,   2360,   2382,   2350,   2317,   2251,   2237,   2169,   2243,   2154,   2124,   2169,   2204,   2148,   2075,   2055,   2040,   2009,   2039,   1984,   1935,   1899,   1873,   1837,   1863,   1792,   1772,   1700,   1786,   1809,   1878,   4329,   5299,   5294,   5266,   5212,   5178,   5121,   5098,   5054,   5034,   4989,   4950,   4802,   4738, 
+  2522,   2528,   2609,   2543,   2461,   2484,   2554,   2606,   2514,   2462,   2462,   2485,   2433,   2504,   2408,   2444,   2454,   2418,   2378,   2380,   2352,   2344,   2261,   2262,   2276,   2177,   2183,   2148,   2129,   2085,   2056,   2132,   2121,   2037,   2034,   2068,   2044,   2076,   2000,   1977,   1928,   1950,   1920,   1923,   1874,   1800,   1749,   1814,   1866,   1835,   2110,   4675,   5261,   5266,   5209,   5196,   5167,   5131,   5075,   5038,   4993,   4970,   4933,   4686, 
+//lux_index
+221.055908203125
+//ambientRate
+0.2065308690071106
+//flicker_R
+100
+//flicker_G
+100
+//flicker_B
+100
+//flicker_C
+100
+//flicker_W
+100
+//flicker_ir
+0.0
+//flicker_ir_R_corr
+0.0
+//face_num
+0
+// 0 left top width hight
+1750, 775, 431, 425
+// 1 left top width hight
+0, 0, 0, 0
+// 2 left top width hight
+0, 0, 0, 0
+// 3 left top width hight
+0, 0, 0, 0
+// 4 left top width hight
+0, 0, 0, 0
+// 5 left top width hight
+0, 0, 0, 0
+// 6 left top width hight
+0, 0, 0, 0
+// 7 left top width hight
+0, 0, 0, 0
+// 8 left top width hight
+0, 0, 0, 0
+// 9 left top width hight
+0, 0, 0, 0
+// 10 left top width hight
+0, 0, 0, 0
+// 11 left top width hight
+0, 0, 0, 0
+// 12 left top width hight
+0, 0, 0, 0
+// 13 left top width hight
+0, 0, 0, 0
+// 14 left top width hight
+0, 0, 0, 0
+// 15 left top width hight
+0, 0, 0, 0
+//"AWBAlgo_collect_valid_succ", previous frame status.
+313
+//"AWBAlgo_valid_green_target_force_1_rg", 738
+384
+//"AWBAlgo_valid_green_target_force_1_bg", 739
+664
+//"AWBAlgo_valid_green_target_force_2_rg", 740
+385
+//"AWBAlgo_valid_green_target_force_2_bg", 741
+663
+//"AWBAlgo_valid_green_target_force_3_rg", 742
+385
+//"AWBAlgo_valid_green_target_force_3_bg", 743
+662
+//"AWBAlgo_low_confid_1_stat_num", 744
+1065
+//"AWBAlgo_low_confid_1_rg", 745
+570
+//"AWBAlgo_low_confid_1_bg", 746
+553
+//"AWBAlgo_low_confid_2_stat_num", 747
+1080
+//"AWBAlgo_low_confid_2_rg", 748
+567
+//"AWBAlgo_low_confid_2_bg", 749
+552
+//"AWBAlgo_low_confid_3_stat_num", 750
+1086
+//"AWBAlgo_low_confid_3_rg", 751
+568
+//"AWBAlgo_low_confid_3_bg", 752
+551
+//awb_info->awb_face_info.skin_shift2locus_pre_rg = 0;
+0
+//awb_info->awb_face_info.skin_shift2locus_pre_bg = 0;
+0
+//awb_info->awb_face_info.skin_WP_percent_pre = 0;
+0
+//awb_info->awb_face_info.skin_prefer_percent_pre = 0;
+0
+//awb_info->awb_face_info.skin_ccm_percent_pre = 0;
+0
+//awb_info->awb_face_info.skin_WP_keep_cont = 0;
+0
+//awb_info->awb_face_info.skin_prefer_keep_cont = 0;
+0
+//awb_info->awb_face_info.skin_ccm_keep_cont = 0;
+0
+//previous frame awb_face_wet_map
+0, 0,

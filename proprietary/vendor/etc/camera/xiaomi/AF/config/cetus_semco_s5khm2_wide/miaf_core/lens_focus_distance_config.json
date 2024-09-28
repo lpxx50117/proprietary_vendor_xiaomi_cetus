@@ -1,0 +1,10 @@
+{
+	"DacController" : false,
+	"LensPosition":  [  0,  105,  305,  452,  555,  604,  638,  649,   694,   704,   721,   732,   740],
+	"FocusDistance": [7.0, 10.0, 14.0, 20.0, 30.0, 40.0, 50.0, 60.0, 100.0, 120.0, 200.0, 300.0, 500.0],
+	"EnableLimitation": [0,0,0],
+	"MinLimitation": [7.0,7.0,7.0],
+	"MaxLimitation": [500.0,500.0,500.0],
+	"HyperIdx": 12,
+	"Near_Limit_Idx": 0
+}

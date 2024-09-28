@@ -1,0 +1,11 @@
+{
+	"valid_sensor_region_width_offset" : 0,
+	"valid_sensor_region_height_offset" : -200,
+	"preview_roi_width_ratio" : 1.0,
+	"preview_roi_height_ratio" : 1.0,
+	"video_roi_width_ratio" : 1.0,
+	"video_roi_height_ratio" : 1.0,
+	"union_ratio": 0.8,
+	"leave_detection_region_ratio" : 0.1,
+	"leave_detection_region_counting" : 10
+}

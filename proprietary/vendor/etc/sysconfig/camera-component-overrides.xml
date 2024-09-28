@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <component-override package="com.android.camera" >
+        <!-- whether or not remote online/video cast is supported? -->
+        <component class="com.xiaomi.camera.videocast.VideoCastTileService" enabled="true" />
+    </component-override>
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<system_config>
+  <system left_padding="20"
+      top_padding="30"
+      right_padding="20"
+      bottom_padding="30"
+      mid_padding="1"
+      mid_drag_padding="8"
+      corner_radius="5"
+      support_round_angle="true"
+      support_open_capability="true"
+      support_dynamic_effect="true"
+      support_background="true"
+      is_back_to_middle="true"/>
+</system_config>

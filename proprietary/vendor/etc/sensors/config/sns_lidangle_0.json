@@ -1,0 +1,58 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK", "IDP", "CETUS"],
+    "soc_id": ["300", "301", "336", "339", "341", "347", "355", "360", "361", "365", "366", "393", "394", "356", "415"]
+  },
+  "lidangle_0_platform":{
+    "owner": "lidangle",
+    ".orient":{
+      "owner": "lidangle",
+      "x":{ "type": "str", "ver": "0",
+        "data": "+y"
+      },
+      "y":{ "type": "str", "ver": "0",
+        "data": "+x"
+      },
+      "z":{ "type": "str", "ver": "0",
+        "data": "-z"
+      }
+    },
+    ".lidangle":{
+      "owner": "lidangle",
+      ".config":{
+        "owner": "lidangle",
+        "max_angle":{ "type": "flt", "ver": "0",
+            "data": "180"
+        },
+        "orient":{ "type": "int", "ver": "0",
+            "data": "1"
+        },
+        "key_board_idx":{ "type": "int", "ver": "0",
+            "data": "1"
+        },
+        "k_acc":{ "type": "flt", "ver": "0",
+            "data": "0.1"
+        },
+        "k_lid":{ "type": "flt", "ver": "0",
+          "data": "0.09"
+        },
+        "upright_angle":{ "type": "flt", "ver": "0",
+            "data": "15.0"
+        },
+        "sah_mean":{ "type": "flt", "ver": "0",
+            "data": "0.35"
+        },
+        "sah_var":{ "type": "flt", "ver": "0",
+            "data": "0.12"
+        },
+        "default_sr":{ "type": "flt", "ver": "1",
+            "data": "100.0"
+        },
+        "default_rr":{ "type": "flt", "ver": "1",
+            "data": "5"
+        }
+      }
+    }
+  }
+}

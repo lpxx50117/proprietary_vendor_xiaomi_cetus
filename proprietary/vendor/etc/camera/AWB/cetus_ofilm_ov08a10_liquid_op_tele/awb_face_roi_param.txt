@@ -1,0 +1,12 @@
+//Enable MiAF Face ROI
+0
+//cfg_detected_face_min_size_in_pixel
+200
+//cfg_face_mode_in_confidence_thr
+400
+//cfg_loss_face_penalty_in_confidence_thr
+100
+//cfg_roi_update_rate_T
+0
+//cfg_roi_overlapping_T
+0.8

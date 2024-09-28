@@ -1,0 +1,9 @@
+{
+    "enable" : true,
+    "overlapping_ratio_T" : 0.9,
+    "overlapping_ratio_on_searching_T" : 0.3,
+    "roi_update_rate_T" : 0.8,
+    "extended_roi_update_rate_T" : 0.85,
+    "extended_overlapping_ratio_T" : 0.98,
+    "extended_overlapping_ratio_on_searching_T" : 0.3
+}

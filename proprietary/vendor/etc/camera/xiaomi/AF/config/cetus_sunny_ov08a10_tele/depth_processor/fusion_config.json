@@ -1,0 +1,9 @@
+{
+	"pd_fusion_on": true,
+	"tof_fusion_on": false,
+	"video_pd_valid_count" : 2,
+	"depth_monitor_pd_conf_h_thd" : 0.35,
+	"depth_monitor_pd_conf_l_thd" : 0.3,
+	"center_max_saturation_thd0" : 0.15,
+	"center_max_saturation_thd1" : 0.3
+}

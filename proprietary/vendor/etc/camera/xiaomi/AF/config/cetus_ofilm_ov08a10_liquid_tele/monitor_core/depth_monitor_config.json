@@ -1,0 +1,22 @@
+{
+    "transient_duration_in_sec": 0.15,
+    "transient_unstable_ratio": 1.0,
+    "tripod_transient_duration_in_sec": 0.05,
+    "tripod_transient_unstable_ratio": 0.5,
+    "filter_length" : 5,
+    "pd_std_thd" : [640.0,480.0,200.0],
+    "pd_tgr_dac_difference" : 200,
+    "pd_tgr_std_thd" : 64.0,
+    "pd_tgr_min_confidence" : 200,
+    "pd_tgr_fv_diff_wgt" : 0.15,
+    "pd_tgr_fv_stab_wgt" : 0.1,
+    "pd_scene_chg_std_thd" : 96.0,
+    "macro_pd_std_thd" : [500.0,400.0,200.0],
+    "macro_pd_tgr_dac_difference" : 500,
+    "macro_pd_stable_std_th":8.0,
+    "macro_stable_fv_coef": 0.40,
+    "macro_distance":5.0,
+    "macro_to_normal_distance":25.0,
+    "macro_trust_conf":0.5,
+    "macro_pd_std_th_adjust_base":800
+}
